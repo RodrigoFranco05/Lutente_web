@@ -315,7 +315,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-image: url('../img/elementosParaWeb42.png');
+    background-image: url('../source/img/elementosParaWeb42.png');
     background-size: 100%;
     position: absolute;
     margin-top: 230px;
