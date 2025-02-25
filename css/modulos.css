@@ -1,0 +1,109 @@
+.container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    margin-right: 10%;
+}
+
+/* Pentágono con borde negro y sin fondo */
+.pentagon {
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 94%, 18% 94%, 0% 38%);
+    background-color: #f5f5f5;
+    
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.pentagon2{
+    position: absolute;
+    width: 395px;
+    height: 395px;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 94%, 18% 94%, 0% 38%);
+    background-color: #0e0e0e;
+    background-image: url(../source/img/logo_blanco_modulo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;   /* tamaño del logo de bakground*/
+    
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+}
+
+/* Estilos de los círculos */
+.circle {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: #0e0e0e;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    border: 2px solid #f5f5f5;
+
+    transition: transform 0.7s;
+}
+
+.circle img {
+    width: 70%;
+}
+
+/* Posiciones exactas de los círculos en las aristas del pentágono */
+#circle1{ top: -40px; left: 38%; } /* Arriba */
+#circle2 { top: 25%; right: -35px; } /* Arriba Derecha */
+#circle3 { bottom: -15px; left: 68%; } /* Abajo Derecha */
+#circle4 { bottom: -15px; left: 8%; } /* Abajo Izquierda */
+#circle5 { top: 25%; left: -35px;} /* Arriba Izquierda */
+
+/* Texto que aparece al hacer hover */
+.text-box {
+    color: white;
+    padding: 20%;
+    text-align: center;
+    display:none;
+}
+
+.text-box h3{
+    font-size: 2.5em;
+    font-weight: 500;
+    margin-bottom: 30px;
+    color: #f4b10e;
+}
+
+.text-box p{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+/* Hover para cambiar color y mostrar texto */
+.circle:hover {
+    /* filter: invert(84%) sepia(100%) saturate(500%) hue-rotate(0deg); */
+    border: 2px solid #f4b10e;
+    transform: scale(1.1);
+    transition: 0.7;
+
+}
+
+.circle:hover + .text-box {
+    display: block;
+}
+
+.circle {
+    transition: border-color 0.7s ease-in-out, scale(1) 0.7s ease-in-out;
+}
+
+/* Color activo */
+.circle.activo {
+    border-color: #f4b10e !important;
+    transform: scale(1.1);
+    transition: 0.7s;
+}
+
+

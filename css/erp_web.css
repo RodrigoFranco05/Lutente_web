@@ -1,0 +1,388 @@
+/* Configuracion General */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+}
+
+/*  ----------- main --------------   */
+
+.principal{ 
+    background-image: url(../source/img/background_3.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    
+}
+
+.hero_section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-color: #f4b10e; */
+    
+    
+}
+
+.hero_text{
+    margin: 0 0 0 10%;
+    width: 40%;
+}
+
+.hero_text h1{
+    font-size: 4em;
+    color: #f8f7f7;
+    
+}
+
+.hero_text p {
+    font-size: 3.5em;
+    margin: 40px 0;
+    font-weight: 300;
+    color: #0e0e0e;
+}
+
+.hero_text a{
+    font-size: 1.7em;
+    padding: 10px;
+    
+    background-color: rgb(14,14,14);
+
+    text-decoration: none;
+    color:white;
+    border-radius: 15px;
+    font-weight: 300;
+}
+
+#botonERP{
+    transition: 0s;
+    
+}
+
+#botonERP:hover{
+    
+    background-color: #3d2d04;
+    
+}
+
+.hero_text a img{
+    height: 20px;
+    filter: invert(1);
+    transition: 0.5s;
+}
+
+.hero_text a:hover img{
+    transform: translate(10px, 0%) ;
+}
+
+.hero_text a:hover{
+    background-color: rgb(167, 122, 8);
+    color: white;
+}
+
+.hero_img{
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero_img img{
+    width: 80%;
+}
+
+.modulos_erp{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -50px;
+    
+    /* background-image: url(../source/img/modulos_background.png); */
+}
+
+.modulos_erp article{
+    width: 90%;
+    height: 600px;
+    padding: 30px;
+    background-color: #0e0e0e;
+    border-radius: 30PX;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+
+    box-shadow: 0px 0px 35px -2px rgba(0,0,0,1);
+    background-image: url(../source/img/Texto\ del\ párrafo\ \(3\).png);
+}
+.modulos_erp  .texto{
+    color: #f8f7f7;
+    width: 50%;
+    height: 80%;
+}
+
+.textos_modulos{
+    display: flex;
+    height: 100%;
+    
+    align-items: center;
+    
+}
+
+.text-box {
+    opacity: 0;
+    transition: opacity 0.7s ease-in-out;
+    display: none; /* Oculto por defecto */
+}
+
+.text-box.mostrando {
+    display: block; /* Se muestra antes de la transición */
+}
+
+.text-box.activo {
+    opacity: 1; /* Transición a visible */
+}
+
+
+
+.modulos_erp h2{
+    font-size: 3em;
+    margin-left: 5%;
+    font-weight: 400;
+}
+
+.modulos_erp p{
+    font-size: 1.7em;
+    margin-left: 5%;
+    font-weight: 300;
+}
+
+.img_modulos{
+    display: flex;
+    justify-content: end;
+}
+.modulos_erp img{
+    filter: invert(1);
+    width: 70%;
+}
+
+.erp_texto_1{
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    
+    margin: 100px auto 0;
+
+
+    font-weight: 300;
+
+    margin: 200px 0;
+    
+}
+#contador {
+    display: inline-block;  /* Permite manipular el ancho */
+    min-width: 4ch;         /* Establece un ancho mínimo basado en caracteres */
+    text-align: center;     /* Centra el texto dentro del span */
+    color: #f4b10e;
+}
+
+.erp_texto_1 strong{
+    font-weight: 500;
+    color: #f4b10e;
+}
+.erp_texto_1 article{
+
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    flex-direction: column;
+
+    width: 50%;
+
+} 
+
+.erp_texto_1 article img{
+    padding: 10px;
+    width: 100%;
+}
+
+
+.parrafo_texto_1{
+    font-size: 2em;
+    text-align: center;
+    margin: 0 10px 50px 30px;
+}
+
+.parrafo_texto_1 h4{
+    font-size: 1.6em;
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: 300;
+}
+
+.registro_texto{
+    margin: 30px;
+    font-size: 2em;
+    padding: 10px;
+
+    
+}
+
+.registro_texto a{
+    text-decoration: none;
+    background-color: rgb(14,14,14);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+.beneficios{
+    display: flex;
+    height: 70vh;
+}
+
+.imagen_beneficio{
+    width: 35%;
+
+}
+
+.imagen_beneficio img{
+    height: 100%;
+    border-radius: 30px 0 0 30px ;
+    margin-left: 50px;
+
+}
+
+.texto_beneficios{
+    width: 65%;
+    background-color: rgb(14,14,14);
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     border-radius: 0 30px 30px 0;
+     margin-right: 50px;
+
+     box-shadow: 30px 0px 97px -36px rgba(0,0,0,0.75);
+
+}
+
+.texto_beneficios h2{
+    color:white;
+    font-size: 3em;
+    font-weight: 300;
+    margin: 40px auto ;
+}
+
+.texto_beneficios h2 strong{
+    color: #f4b10e;
+    font-weight: 300;
+    margin: 40px auto ;
+}
+
+.texto_beneficios p{
+    font-size: 1.3em;
+    margin: 20px 10%;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.texto_beneficios p:hover{
+   zoom: 1.15;
+   margin: 16px 10%;
+}
+
+
+.texto_beneficios p img{
+    margin: 0 10px;
+    filter: invert(68%) sepia(90%) saturate(386%) hue-rotate(0deg) brightness(100%) contrast(80%);
+    width: 24px;
+}
+
+.contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contacto h2{
+    font-size: 3em;
+    padding: 10px;
+    margin: 180px auto 40px;
+    font-weight: 400;
+}
+
+.contacto a{
+    font-size: 1.7em;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(14,14,14);
+    color: white;
+    border-radius: 10px;
+
+    margin: 0 auto 40px;
+}
+
+.contacto img{
+    width: 60%;
+}
+
+.consecionaria_promo{
+    background-color: #f4b10e;
+    width: 80%;
+    border-radius: 15px;
+    margin: 0 auto 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 300px;
+
+}
+
+.consecionaria_promo div{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.consecionaria_promo h3{
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+.consecionaria_promo div p{
+    font-size: 1.5em;
+    margin: 0 50px 30px;
+    text-align: center;
+    
+}
+
+.consecionaria_promo div a{
+    font-size: 1.5em;
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(14,14,14);
+    color: white;
+    border-radius: 10px;
+
+}
+
+.consecionaria_promo article{
+    width: 30%;
+}
+.consecionaria_promo img{
+    width: 100%;
+}
+

@@ -1,0 +1,234 @@
+/* Configuracion General */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    
+    font-style: normal;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+/* --------- Main -------- */
+
+.seccion_1_hero{
+    width: 100%;
+    
+}
+
+.seccion_1_hero h1{
+    width: 90%;
+    padding-bottom: 30px;
+    margin:150px auto 0;
+    font-size: 4em;
+    font-weight: 400;
+    text-align: center;
+    border-bottom: 5px solid #f4b10e;
+}
+
+.conteiner{
+    
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.img_background{
+    background-color: #0e0e0e;
+    width: 10px;
+    height: 1000px;
+    margin: 100px auto;
+
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+}
+
+.seccion_1_hero .titulo_1 ,.seccion_1_hero .titulo_2{
+    background-color: #f4b10e;
+    padding: 30px;
+    font-size: 3em;
+    font-weight: 300;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 0px 55px -5px rgba(0,0,0,0.75);
+
+    margin: 90px auto 0;
+}
+
+.texto_1, .texto_2{
+    background-color: #f4b10e;
+    padding: 30px;
+    font-size: 1.8em;
+    font-weight: 300;
+    display: inline-block;
+    border-radius: 20px;
+    box-shadow: 0px 0px 55px -5px rgba(0,0,0,0.75);
+    margin-top: 90px;
+}
+
+.seccion_1_hero .texto_2{
+    margin-bottom: 50px;
+}
+
+.conteiner p{
+    margin-top: 30px ;
+    text-align: justify;
+    
+}
+
+
+
+
+.seccion_2{
+    padding: 5%;
+}
+
+.seccion_2 .seccion_3_conteiner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.seccion_2 div h3{
+    font-size: 4em;
+    font-weight: 300;
+    margin-bottom: 60px;
+}
+
+.grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    gap: 30px;
+    width: 80%;
+    
+}
+
+.grid_container div{
+   
+    height: 33vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    box-shadow: 0px 0px 55px -5px rgba(0,0,0,0.75);
+    background-color: #f4b10e;
+    border-radius: 20px;
+    
+}
+
+.grid_container div:hover{
+   transform: scale(1.05);
+   background-color: #0e0e0e;
+   color: #f0f0f0;
+}
+
+.grid_container div:hover img{
+    filter: invert(1);
+    transition: opacity 0.3s ease-in-out;
+    display: none;
+}
+
+.grid_container div p {
+    transition: opacity 0.3s ease-in-out;
+    font-size: 1.5em;
+}
+
+
+.grid_container img{
+    width: 20%;
+    padding:15px;
+}
+
+.grid_container p{
+    width: 70%;
+    text-align: center;
+   
+}
+
+.sticky_parent{
+    height: 200vh;
+    background-color: #0e0e0e;
+    margin-top: 50px;
+}
+
+.sticky{
+    overflow: hidden;
+    position: sticky;
+    top: 0px;
+    height: 100vh;
+    border: 1px solid black;
+}
+
+.scroll_section{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 200vw;
+    will-change: transform;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5vw;
+    
+}
+
+.sticky_parent img{
+    /* width: 400px; */
+    height: 50%;
+    object-fit: cover;
+    object-position: center;
+}
+
+
+.info_1{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.info_2{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-end;
+}
+.scroll_section  .titulo_1 ,.scroll_section  .titulo_2{
+    background-color: transparent;
+    padding: 30px;
+    font-size: 4em;
+    font-weight: 300;
+    display: inline-block;
+    width: fit-content;
+    color: #f0f0f0;
+    
+
+}
+
+.scroll_section  .texto_1,.scroll_section  .texto_2{
+    background-color: transparent;
+    padding: 30px;
+    font-size: 1.3em;
+    font-weight: 300;
+    display: inline-block;
+    width: 60%;
+    margin-top: 90px;
+    color: #f0f0f0;
+    box-shadow: none;
+}
+
+.scroll_section  p{
+    margin-top: 30px ;
+    text-align: justify;
+    background-color: transparent;
+}
