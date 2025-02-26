@@ -112,6 +112,35 @@
 }
 
 
+#botonERP{
+    transition: 0.5s;
+    font-size: 1.7em;
+    padding: 10px;
+    
+    background-color: rgb(14,14,14);
+
+    text-decoration: none;
+    color:white;
+    border-radius: 15px;
+    font-weight: 300;
+    
+}
+
+#botonERP:hover{
+    background-color: #3d2d04;
+}
+
+#botonERP img{
+    height: 20px;
+    filter: invert(1);
+    transition: 0.5s;
+    
+}
+
+#botonERP:hover img{
+    transform: translate(10px, 0%) ;
+}
+
 
 .hero_producto_1  a:hover, .consecionaria a:hover{
     scale: 1.2;
@@ -166,7 +195,7 @@
 }
 
 .consecionaria_texto p{
-
+    font-size: 2.5em;
 }
 .consecionaria_img {
     width: 30%;
@@ -356,7 +385,7 @@ input[type="radio"]{
     color: #0e0e0e;
     font-size: 4em;
     font-weight: 400;
-    margin-bottom: 50px;
+    margin: 20px 0 0;
     padding: 20px;
 }
 
@@ -373,7 +402,7 @@ input[type="radio"]{
 
 
 .seccion_3_lp{
-    padding: 5%;
+    padding:  0 5% 5%;
     margin: 100px 0 100px;
 }
 
@@ -384,10 +413,25 @@ input[type="radio"]{
 }
 
 .seccion_3_lp div h3{
-    font-size: 3.5em;
+    font-size:4em;
     font-weight: 300;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    align-items: flex-end;
 }
+
+.seccion_3_lp div strong{
+    font-size: 3em;
+    font-weight: 500;
+    margin-right: 20px;
+    color: #f4b10e;
+    height: 170px;
+    
+   
+}
+
 
 .grid_container{
     display: grid;
@@ -429,7 +473,7 @@ input[type="radio"]{
     background-color: transparent;
     width: 400px;
     height: 400px;
-    box-shadow: 0px 0px 34px -7px rgba(0,0,0,0.75);
+    /* box-shadow: 0px 0px 34px -7px rgba(0,0,0,0.75); */
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -447,6 +491,12 @@ input[type="radio"]{
   .flip-box:hover .flip-box-inner {
     transform: rotateY(180deg);
   }
+
+  .flip-box:hover {
+    box-shadow: none;
+    transition: box-shadow 0.5s ease-in-out;
+  }
+
   
   /* Position the front and back side */
   .flip-box-front, .flip-box-back {
@@ -461,6 +511,9 @@ input[type="radio"]{
   .flip-box-front {
     background-color: #f4b10e;
     color: black;
+    justify-content: flex-start !important;
+    /* box-shadow: inset 0px 0px 117px -31px rgba(0,0,0,0.75); */
+    box-shadow: inset 0px 0px 117px 45px rgba(0,0,0,0.75);
   }
   
   /* Style the back side */
@@ -475,11 +528,11 @@ input[type="radio"]{
 }
 
 .flip-box-front img{
-
+    margin-top: 20%;
 }
 
 .flip-box-back p{
-    font-size: 1em;
+    font-size: 1.1em;
 }
 
 .flip-box-back h2{

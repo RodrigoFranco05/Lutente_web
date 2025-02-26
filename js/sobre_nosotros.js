@@ -1,44 +1,4 @@
 document.addEventListener("DOMContentLoaded", () => {
-    const sticky = document.querySelector(".sticky"); // Solo obtenemos un sticky
-    const scrollSection = sticky.querySelector(".scroll_section");
-
-    let images = [
-        "../source/img/e7954256.webp",
-        "../source/img/e7954256.webp"
-    ];
-
-    // // Agregar imágenes dinámicamente
-    // images.forEach(img => {
-    //     let image = document.createElement("img");
-    //     image.src = img;
-    //     scrollSection.appendChild(image);
-    //     image.style.backgroundColor = "#f4b10e"; // Solo si realmente necesitas esto
-    // });
-
-    // Aplicamos una transición para suavizar el efecto
-    scrollSection.style.transition = "transform 0.3s ease-out";
-
-    // Escuchar el scroll y actualizar la transformación
-    window.addEventListener("scroll", () => {
-        transform(sticky);
-    });
-
-    function transform(section) {
-        const offsetTop = section.parentElement.offsetTop;
-        let percentage = ((window.scrollY - offsetTop) / window.innerHeight) * 100;
-
-        // Limitar el porcentaje para que no exceda los valores deseados
-        percentage = Math.max(0, Math.min(percentage, 100));
-
-        // Aplicar transformación con transición
-        scrollSection.style.transform = `translate3d(${-percentage}vw, 0, 0)`;
-    }
-});
-
-
-
-
-document.addEventListener("DOMContentLoaded", () => {
     const textos = [
         "En Lutente Cloud no solo ofrecemos una plataforma, sino que construimos una experiencia diseñada a la medida de tu negocio.",
         "Sabemos que cada empresa es única, por eso trabajamos contigo para garantizar que nuestras soluciones realmente aporten valor a tu día a día.",

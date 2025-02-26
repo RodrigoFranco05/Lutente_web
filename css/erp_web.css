@@ -64,6 +64,9 @@
 
 #botonERP{
     transition: 0s;
+    display: flex;
+    align-items: center;
+    width: fit-content;
     
 }
 
@@ -71,6 +74,17 @@
     
     background-color: #3d2d04;
     
+}
+
+#botonERP img{
+    
+    filter: invert(1);
+    transition: 0.5s;
+    width: fit-content;
+}
+
+#botonERP:hover img{
+    transform: translate(10px, 0%) ;
 }
 
 .hero_text a img{
@@ -188,12 +202,6 @@
     margin: 200px 0;
     
 }
-#contador {
-    display: inline-block;  /* Permite manipular el ancho */
-    min-width: 4ch;         /* Establece un ancho mínimo basado en caracteres */
-    text-align: center;     /* Centra el texto dentro del span */
-    color: #f4b10e;
-}
 
 .erp_texto_1 strong{
     font-weight: 500;
@@ -261,7 +269,7 @@
     height: 100%;
     border-radius: 30px 0 0 30px ;
     margin-left: 50px;
-
+    box-shadow: 0px 0px 58px 0px rgba(0,0,0,0.75);
 }
 
 .texto_beneficios{
@@ -273,7 +281,7 @@
      border-radius: 0 30px 30px 0;
      margin-right: 50px;
 
-     box-shadow: 30px 0px 97px -36px rgba(0,0,0,0.75);
+     box-shadow: 0px 0px 58px 0px rgba(0,0,0,0.75);
 
 }
 
@@ -281,17 +289,17 @@
     color:white;
     font-size: 3em;
     font-weight: 300;
-    margin: 40px auto ;
+    margin: 40px auto 20px;
 }
 
 .texto_beneficios h2 strong{
     color: #f4b10e;
     font-weight: 300;
-    margin: 40px auto ;
+    margin: 40px auto;
 }
 
 .texto_beneficios p{
-    font-size: 1.3em;
+    font-size: 1.5em;
     margin: 20px 10%;
     color: white;
     display: flex;
@@ -300,14 +308,14 @@
 
 .texto_beneficios p:hover{
    zoom: 1.15;
-   margin: 16px 10%;
+   margin: 15px 10%;
 }
 
 
 .texto_beneficios p img{
     margin: 0 10px;
     filter: invert(68%) sepia(90%) saturate(386%) hue-rotate(0deg) brightness(100%) contrast(80%);
-    width: 24px;
+    width: 35px;
 }
 
 .contacto{
