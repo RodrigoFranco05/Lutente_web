@@ -190,6 +190,10 @@ button {
     cursor: pointer;
 }
 
+.menu_toggle{
+    display: none;
+}
+
 /* Estilos para pantallas pequeñas */
 @media (max-width: 1010px) {
     nav{
