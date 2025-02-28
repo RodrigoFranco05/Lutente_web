@@ -1,11 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const burgerMenu = document.querySelector('.menu_toggle');
-    const burgerIcon = document.querySelector('.burger');
+    const burgerMenu = document.getElementById('menu_toggle');
+    const burgerIcon = document.getElementById('burger');
+    const closebtn = document.getElementById('close_img');
     
     burgerIcon.addEventListener('click', () => {
         burgerMenu.classList.toggle('open'); // Agrega o quita la clase 'open'
     });
+
+    closebtn.addEventListener('click', () => {
+        burgerMenu.classList.toggle('open'); // Agrega o quita la clase 'open'
+    });
 });
+
+
 // document.addEventListener("DOMContentLoaded", function () {
 //     var header = document.getElementById("header");
 //     var logo = document.getElementById("logo"); // Asegúrate de que este id esté en tu imagen
