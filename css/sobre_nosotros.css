@@ -106,24 +106,28 @@ body{
 
 .grid_container{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(33vh, 1fr));
     grid-template-rows: repeat(2, auto);
     gap: 30px;
     width: 80%;
+    max-width: 141vh;
+    justify-items: center
     
 }
 
 .grid_container div{
    
     height: 33vh;
+    width: 33vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     transition: 0.7s;
     box-shadow: 0px 0px 55px -5px rgba(0,0,0,0.75);
     background-color: #f4b10e;
     border-radius: 20px;
+
     
 }
 
@@ -131,7 +135,9 @@ body{
    transform: scale(1.05);
    background-color: #0e0e0e;
    color: #f0f0f0;
+   justify-content: center;
 }
+
 
 .grid_container div:hover img{
     filter: invert(1);
@@ -146,8 +152,9 @@ body{
 
 
 .grid_container img{
-    width: 20%;
+    width: 80px;
     padding:15px;
+    margin: 25% 0 0;
 }
 
 .grid_container p{

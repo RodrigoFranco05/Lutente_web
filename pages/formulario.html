@@ -33,7 +33,7 @@
                     <img id="logo" src="../source/img/Home_2.png" alt="Lutente">
                 </div>
                 <ul class="nav_links">
-                     <li><a class="nav_link_a" href="../index.html">Home</a></li>
+                     <li class="first_link"><a class="nav_link_a" href="../index.html">Home</a></li>
                      <li><div class="dropdown">
                         <button class="dropbtn">Productos</button>
                         <div class="dropdown-content">
@@ -45,7 +45,7 @@
                      <li><a class="nav_link_a" href="formulario.html">Contacto</a></li>
                 </ul>
 
-                <div>
+                <div class="ingreso">
                     <ul class="ingreso_nav">
                         <il class="primero"><a href="#">Registro</a></il>
                         <il><a href="https://lutente.com/DEMO/login.php">Ingreso</a></il>
@@ -63,35 +63,44 @@
 
         <section class="sectionForm">
             <!-- <div class="img_bkg"></div> -->
-            <form action="https://formsubmit.co/372a1d143668052eebf084acf8271fdc" method="POST" class="form">
+            <form action="" method="POST" class="form" id="contact-form">
                 <img class="lutente_cloud" src="../source/img/sectionInicioPruebaSinFondo.png" alt="">
 
               <ul>
                 <li class="listaForm">
                   <label for="name"><img src="../source/img/usuario.png" alt="usuario name" class="iconForm"></label>
-                  <input type="text" id="name" name="name" placeholder="Nombre" class="inputForm" required />
+                  <input type="text"  name="name" placeholder="Nombre" class="inputForm" id="name" required />
                 </li>
                 <li class="listaForm">
                   <label for="company"><img src="../source/img/maletin.png" alt="compania" class="iconForm"></label>
-                  <input type="text" id="company" name="company" placeholder="Empresa/Negocio (opcional)" class="inputForm"/>
+                  <input type="text"  name="company" placeholder="Empresa/Negocio (opcional)" id="business" class="inputForm"/>
                 </li>
                 <li class="listaForm">
                   <label for="number"><img src="../source/img/telefono-inteligente.png" alt="celular" class="iconForm"></label>
-                  <input type="text" id="number" name="number" placeholder="Número (opcional)" class="inputForm" />
+                  <input type="text" name="number" placeholder="Número (opcional)" id="number" class="inputForm" />
                 </li>
                 <li class="listaForm">
                   <label for="mail"><img src="../source/img/correo-electronico.png" alt="correo" class="iconForm"></label>
-                  <input type="email" name="email" placeholder="Email" class="inputForm" required />
+                  <input type="email" name="email" placeholder="Email" class="inputForm" id="email"  required />
                 </li>
                 <li class="listaForm">
                   <label for="comments"><img src="../source/img/mensaje.png" alt="mensaje" class="iconForm"></label>
-                  <textarea id="comments" name="comments" placeholder="Comentario (opcional)" class="inputForm"></textarea>
+                  <textarea name="comments" placeholder="Comentario (opcional)" id="message" class="inputForm"></textarea>
                 </li>
               </ul>
               <input type="submit" value="Enviar" class="buttonForm">
             </form>
         
           </section>
+
+          <!-- Modal -->
+  <div id="status-modal" class="modal">
+  <div class="modal-content">
+      <p id="modal-message"></p>
+      <button id="close-modal">Cerrar</button>
+  </div>
+</div>
+
 
     </main>
 
@@ -125,5 +134,7 @@
     </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="../js/formulario.js"></script>
 </body>
 </html>

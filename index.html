@@ -35,7 +35,7 @@
                     <img id="logo" src="./source/img/Home_2.png" alt="Lutente">
                 </div>
                 <ul class="nav_links">
-                     <li><a class="nav_link_a" href="#">Home</a></li>
+                     <li class="first_link"><a class="nav_link_a" href="#">Home</a></li>
                      <li><div class="dropdown">
                         <button class="dropbtn">Productos</button>
                         <div class="dropdown-content">
@@ -47,18 +47,38 @@
                      <li><a class="nav_link_a" href="pages/formulario.html">Contacto</a></li>
                 </ul>
 
-                <div>
+                <div class="ingreso">
                     <ul class="ingreso_nav">
                         <il class="primero"><a href="pages/formulario.html">Registro</a></il>
                         <il><a href="https://lutente.com/DEMO/login.php">Ingreso</a></il>
                     </ul>
     
                     <button><img id="lenguaje" src="./source/img/globe-regular-24.png" alt="cambio idioma"></button>
-                    </div>
-                <!-- <div class="burger">
-                     
-                </div> -->
+                </div>
+
+                <div class="burger" id="burger">
+                    <img src="./source/img/menu-icon.png" alt="menu">
+                </div>
            </nav>
+
+           <div id="menu_toggle" class="menu_toggle">
+
+            <div class="menu_toggle_header">
+                <button><img id="lenguaje_burguer" src="./source/img/globe-regular-24.png" alt="cambio idioma"></button>
+                <button> <img id="close_img" src="./source/img/x-regular-120.png" alt=""></button>
+            </div>
+
+            <ul class="nav_links_burguer">
+                <li><a class="nav_link_a" href="#">Home</a></li>
+                    <li class="productos_burguer"><a href="pages/erp_web.html">ERP PyMEs</a></li>
+                    <li class="productos_burguer"><a href="pages/consecionaria_web.html">ERP Vehículos</a></li>
+                <li><a class="nav_link_a" href="pages/sobre_nosotros.html">Sobre nosotros</a></li>
+                <li><a class="nav_link_a" href="pages/formulario.html">Contacto</a></li>
+                <li class="registro_burguer"><a href="pages/formulario.html">Registro</a></li>
+                <li><a href="https://lutente.com/DEMO/login.php">Ingreso</a></li>
+           </ul>
+    
+        </div>
     </header>
     <main>
         <section class="hero_section">
@@ -136,9 +156,9 @@
                 
                 <H3><strong>4</strong> RAZONES PARA ELEGIRNOS</H3>
 
-                 <div class="grid_container">
+                 <div class="grid_container" data-aos="fade-up" data-aos-duration="2000">
 
-                    <div class="flip-box">
+                    <div class="flip-box" >
                         <div class="flip-box-inner">
                           <div class="flip-box-front">
                             <img src="source/img/world-regular-240.png" alt="">
@@ -151,7 +171,7 @@
                         </div>
                       </div>
 
-                      <div class="flip-box">
+                      <div class="flip-box" >
                         <div class="flip-box-inner">
                           <div class="flip-box-front">
                             <img src="source/img/lock-alt-solid-240.png" alt="">
@@ -177,7 +197,7 @@
                         </div>
                       </div>
 
-                      <div class="flip-box">
+                      <div class="flip-box" >
                         <div class="flip-box-inner">
                           <div class="flip-box-front">
                             <img src="source/img/dollar-circle-regular-240.png" alt="">

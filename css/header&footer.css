@@ -1,4 +1,4 @@
-/*  ----------- Header --------------   */
+/* ----------- Header -------------- */
 #header {
     position: fixed;
     width: 100%;
@@ -8,137 +8,276 @@
     background-color: rgb(14, 14, 14);
 }
 
-
-
-nav{
+nav {
     display: flex;
-    padding:25px;
-    align-items: center
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px;
 }
 
-
-
-/* logo NavBar */
-
-.logo_header{
+/* Logo */
+.logo_header {
     width: 10%;
     min-width: 130px;
     max-width: 220px;
-    position: relative;
-    left: 3%
+    margin-left: 2%;
 }
-.logo_header img{
+
+.logo_header img {
     width: 100%;
 }
 
-#logo {
-    transition: filter 0.7s ease-in-out;
-}
-
 /* Links del Nav */
-
-
-.nav_links{
-    width: 85%;
-    margin: 0 auto;
-    position: absolute;
+.nav_links {
+    width: 72%;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 0;
+    margin: 0;
 }
 
-.nav_links li{
+.nav_links li {
     list-style: none;
     margin-left: 10%;
-    width: auto;
 }
 
-.nav_links a{
+.nav_links a {
     text-decoration: none;
     color: white;
     font-size: 1em;
     font-weight: 400;
 }
 
-
+/* Dropdown */
 .dropbtn {
     background-color: rgb(14, 14, 14);
     color: white;
     padding: 16px;
-    
     font-size: 16px;
     border: none;
-  }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+}
+
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: rgb(14, 14, 14);
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
     margin-left: 30px;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: white;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
-
-  nav{
-    display: flex;
-    justify-content: space-between;
 }
 
-.ingreso_nav .primero{
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Ingreso y lenguaje */
+.ingreso_nav .primero {
     border-right: 1px solid white;
     padding: 5px 10px;
     margin-right: 9px;
 }
 
-.ingreso_nav{
-    margin: 0 10px;
-}
-
-nav div{
+.ingreso {
     display: flex;
     align-items: center;
-
+    width: 16%;
+    min-width: 205px;
 }
 
-nav div a{
+.ingreso a {
     text-decoration: none;
     color: white;
     font-size: 1em;
     font-weight: 400;
 }
 
-button{
+button {
     background-color: transparent;
-    border:none;
+    border: none;
     margin-left: 30px;
 }
 
-#lenguaje{
+#lenguaje {
     filter: invert(1);
 }
 
+/* =========================================*/
+
+/* Menú hamburguesa y su contenido */
+.burger {
+    display: none;
+    cursor: pointer;
+    height: 51px;
+    width: 51px;
+    margin-right: 2%;
+}
+
+.burger img{
+    height: 100%;
+    width: 100%;
+}
+
+.menu {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 250px;
+    height: 100vh;
+    background-color: rgb(14, 14, 14);
+    z-index: 999;
+    transform: translateX(100%);
+    transition: transform 0.7s ease;
+}
+
+.menu.open {
+    display: block;
+    transform: translateX(0); /* El menú se desliza desde la derecha */
+}
+
+.menu ul {
+    padding: 20px;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+
+/* Fondo oscuro cuando el menú se abre */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 998;
+}
+
+/* Cerrar el menú */
+.burger-close {
+    font-size: 2em;
+    color: white;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 1010px) {
+    nav{
+        height:77px;
+    }
+
+    .nav_links {
+        display: none; /* Ocultamos el menú de navegación en pantallas pequeñas */
+    }
+
+    .burger {
+        display: block; /* Mostramos el icono de menú */
+    }
+
+    .ingreso {
+        display: none;
+    }
+
+    .menu_toggle{
+        display: none;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        right: 0;
+        width: 50%;
+        height: 100vh;
+        background-color: #0e0e0e;
+
+    }
+
+    .menu_toggle.open {
+        display: block;
+        transform: translateX(0); /* Aparece en pantalla */
+    }
+
+    .menu_toggle_header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 5px 20px 30px;
+    }
+
+   
+
+    .menu_toggle_header #lenguaje_burguer{
+        height: 40px;
+        width: 40px;
+        margin-right: 10px;
+        filter: invert(1);
+    }
+
+    .menu_toggle_header #close_img{
+        height: 70px;
+        width: 70px;
+        margin-right: 10px;
+        filter: invert(1);
+    }
+
+    .nav_links_burguer{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-decoration: none;
+        color: white;
+        margin-top: 50px;
+        margin-right: 50px;
+    }
+
+    .nav_links_burguer li{
+        list-style: none;
+        margin: 20px;
+    }
+
+    .nav_links_burguer a{
+        text-decoration: none;
+        color: white;
+    }
+
+    .productos_burguer{
+        margin-left: 10px;
+    }
+
+    .nav_links_burguer .registro_burguer{
+        margin-top: 100px;
+    }
+
+
+}
 
 /* --------- Footer -------- */
 
@@ -270,3 +409,6 @@ footer .wrapper p{
     color: rgb(248, 247, 247);
     margin: 10px auto;
 }
+
+/* MEDIAQUERYS */
+
