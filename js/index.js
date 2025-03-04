@@ -14,3 +14,37 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const toggleLanguageBtn = document.getElementById("toggle_lenguaje");
+    const toggleLanguageBurger = document.getElementById("lenguaje_burguer");
+    const flagIcon = document.getElementById("lenguaje");
+    const flagIconBurger = document.getElementById("lenguaje_burguer");
+    let currentLang = localStorage.getItem("language") || "es";
+
+    function updateLanguage(lang) {
+        document.querySelectorAll("[data-lang]").forEach((element) => {
+            const key = element.getAttribute("data-lang");
+            element.innerHTML = languages[lang][key];
+        });
+
+        const flagSrc = lang === "es" ? "./source/img/spain.png" : "./source/img/english.png";
+        flagIcon.src = flagSrc;
+        flagIconBurger.src = flagSrc;
+
+        localStorage.setItem("language", lang);
+    }
+
+    toggleLanguageBtn.addEventListener("click", () => {
+        currentLang = currentLang === "es" ? "en" : "es";
+        updateLanguage(currentLang);
+    });
+
+    toggleLanguageBurger.addEventListener("click", () => {
+        currentLang = currentLang === "es" ? "en" : "es";
+        updateLanguage(currentLang);
+    });
+
+    updateLanguage(currentLang);
+});

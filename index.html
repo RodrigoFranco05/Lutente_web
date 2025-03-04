@@ -13,8 +13,9 @@
     <title>Lutente</title>
 
     <!-- CSS  -->
-     <link rel="stylesheet" href="css/index.css">
-     <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/header&footer.css">
+    <link rel="stylesheet" href="css/index.css">
+     
 
     <!-- Font -->
     
@@ -35,16 +36,16 @@
                     <img id="logo" src="./source/img/Home_2.png" alt="Lutente">
                 </div>
                 <ul class="nav_links">
-                     <li class="first_link"><a class="nav_link_a" href="#">Home</a></li>
-                     <li><div class="dropdown">
-                        <button class="dropbtn">Productos</button>
+                    <li class="first_link"><a class="nav_link_a" href="#" data-lang="home">Inicio</a></li>
+                    <li><div class="dropdown">
+                        <button class="dropbtn" data-lang="products">Productos</button>
                         <div class="dropdown-content">
-                          <a href="pages/erp_web.html">ERP PyMEs</a>
-                          <a href="pages/consecionaria_web.html">ERP Vehículos</a>
+                            <a href="pages/erp_web.html" data-lang="erp_pymes">ERP PyMEs</a>
+                            <a href="pages/consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a>
                         </div>
-                      </div></li>
-                     <li><a class="nav_link_a" href="pages/sobre_nosotros.html">Sobre nosotros</a></li>
-                     <li><a class="nav_link_a" href="pages/formulario.html">Contacto</a></li>
+                    </div></li>
+                    <li><a class="nav_link_a" href="pages/sobre_nosotros.html" data-lang="about_us">Sobre nosotros</a></li>
+                    <li><a class="nav_link_a" href="pages/formulario.html" data-lang="contact">Contacto</a></li>
                 </ul>
 
                 <div class="ingreso">
@@ -53,7 +54,7 @@
                         <il><a href="https://lutente.com/DEMO/login.php">Ingreso</a></il>
                     </ul>
     
-                    <button><img id="lenguaje" src="./source/img/globe-regular-24.png" alt="cambio idioma"></button>
+                    <button id="toggle_lenguaje"><img id="lenguaje" src="./source/img/globe-regular-24.png" alt="cambio idioma"></button>
                 </div>
 
                 <div class="burger" id="burger">
@@ -88,9 +89,9 @@
             <article class="hero_productos">
                 <div class="hero_producto_1">
                     <div class="hero_producto_1_texto">
-                        <h1> <strong>Lutente ERP</strong> es</h1>
-                        <p>La solucion que <strong>NECESITAS</strong></p>
-                        <a href="pages/erp_web.html" id="botonERP"> Conocer más <img src="source/img/chevron-right-regular-24.png" alt=""></a>
+                        <h1 data-lang="hero_title"> <strong>Lutente ERP</strong> es</h1>
+                        <p data-lang="hero_subtitle">La solución que <strong>NECESITAS</strong></p>
+                        <a href="pages/erp_web.html" id="botonERP" data-lang="learn_more"> Conocer más <img src="source/img/chevron-right-regular-24.png" alt=""></a>
                     </div>
                     <div class="hero_producto_1_img">
                         <img class="dispositivo_lutente" src="source/img/notebook_lp.png" alt="">
@@ -105,7 +106,7 @@
         <section class="seccion_1_lp" data-aos-duration="2000">
 
             <div class="seccion_1_conteiner">
-                <h3 data-aos="fade-down" data-aos-duration="2200" >Toda tu empresa en un solo Sistema de Gestion</h3>
+                <h3 data-aos="fade-down" data-aos-duration="2200" >Toda tu empresa en un solo Sistema de Gestión</h3>
                 <img src="source/img/collage2.png" alt="" data-aos="zoom-in" data-aos-duration="2000">
                 <h4 data-aos="fade-up" data-aos-duration="2200" >Nuestro sistema de gestión en la nube está diseñado para simplificar y optimizar la operación de tu empresa.</h4>
             </div>
@@ -131,7 +132,7 @@
                         <input type="radio" name="acordion" id="segundo">
                         <label for="segundo">OPTIMIZA TUS PROCESOS</label>
                         <div class="content">
-                            <p>Las funciones automatizadas de un ERP se encargán de las tareas tediosas, permitiéndote concentrarse en el crecimiento de su negocio.</p>
+                            <p>Las funciones automatizadas de un ERP se encargan de las tareas tediosas, permitiéndote concentrarse en el crecimiento de su negocio.</p>
                         </div>
                     </li>
                     <li>
@@ -162,10 +163,10 @@
                         <div class="flip-box-inner">
                           <div class="flip-box-front">
                             <img src="source/img/world-regular-240.png" alt="">
-                            <p>ACCESO GLOBAL E INSTANTANEO</p>
+                            <p>ACCESO GLOBAL E INSTANTÁNEO</p>
                           </div>
                           <div class="flip-box-back">
-                            <h2>ACCESO GLOBAL E INSTANTANEO</h2>
+                            <h2>ACCESO GLOBAL E INSTANTÁNEO</h2>
                             <p>LA NUBE TE PERMITE ACCEDER A TUS DATOS DE FORMA REMOTA, LO QUE TE BRINDA LA LIBERTAD DE TRABAJAR DESDE CASA, MIENTRAS VIAJAS, O INCLUSO DE DIFERENTES UBICACIONES, CON INFORMACIÓN ACTUALIZADA EN TIEMPO REAL.</p>
                           </div>
                         </div>
@@ -175,11 +176,11 @@
                         <div class="flip-box-inner">
                           <div class="flip-box-front">
                             <img src="source/img/lock-alt-solid-240.png" alt="">
-                            <p>SEGURIDAD Y PROTECCION DE DATOS</p>
+                            <p>SEGURIDAD Y PROTECCIÓN DE DATOS</p>
                           </div>
                           <div class="flip-box-back">
-                            <h2>SEGURIDAD Y PROTECCION DE DATOS</h2>
-                            <p>AL ACTUALIZAR LA PLATAFORMA EN LA NUBE PUEDES ESTAR TRANQUILO SABIENDO QUE TUS DATOS ESTAN PROTEGIDOS DE FORMA ROBUSTA, RESGUARDADOS CONTRA PERDIDAS, ROBOS O INCONVENIENTES GRACIAS A RESPALDOS DIARIOS DE TODA LA INFORMACIÓN.</p>
+                            <h2>SEGURIDAD Y PROTECCIÓN DE DATOS</h2>
+                            <p>AL ACTUALIZAR LA PLATAFORMA EN LA NUBE PUEDES ESTAR TRANQUILO SABIENDO QUE TUS DATOS ESTÁN PROTEGIDOS DE FORMA ROBUSTA, RESGUARDADOS CONTRA PERDIDAS, ROBOS O INCONVENIENTES GRACIAS A RESPALDOS DIARIOS DE TODA LA INFORMACIÓN.</p>
                           </div>
                         </div>
                       </div>
@@ -192,7 +193,7 @@
                           </div>
                           <div class="flip-box-back">
                             <h2>ESCALABILIDAD Y FLEXIBILIDAD</h2>
-                            <p>CON ESTA HERRAMIENTA PUEDES ESCALAR FACILMENTE TUS RECURSOS SEGÚN LA DEMANDA DE TU EMPRESA. SI TU NEGOCIO CRECE SIMPLEMENTE PODES AMPLIAR EL ALMACENAMIENTO Y LA CAPACIDAD DE PROCESAMIENTO EN LA NUBE, SIN LA NECESIDAD DE ADQUIRIR UN NUEVO HARDWARE O REALIZAR COSTOSAS ACTUALIZACIONES.</p>
+                            <p>CON ESTA HERRAMIENTA PUEDES ESCALAR FÁCILMENTE TUS RECURSOS SEGÚN LA DEMANDA DE TU EMPRESA. SI TU NEGOCIO CRECE SIMPLEMENTE PUEDES AMPLIAR EL ALMACENAMIENTO Y LA CAPACIDAD DE PROCESAMIENTO EN LA NUBE, SIN LA NECESIDAD DE ADQUIRIR UN NUEVO HARDWARE O REALIZAR COSTOSAS ACTUALIZACIONES.</p>
                           </div>
                         </div>
                       </div>
@@ -201,11 +202,11 @@
                         <div class="flip-box-inner">
                           <div class="flip-box-front">
                             <img src="source/img/dollar-circle-regular-240.png" alt="">
-                            <p>REDUCCION DE COSTOS</p>
+                            <p>REDUCCIÓN DE COSTOS</p>
                           </div>
                           <div class="flip-box-back">
-                            <h2>REDUCCION DE COSTOS</h2>
-                            <p>LA IMPLEMENTACIÓN DE LA PLATAFORMA EN LA NUBE PUEDE GENERAR AHORROS SIGNIFICATIVOS DE COSTOS. NO TENDRÁS QUE INVERTIR EN COSTOSOS SERVIDORES, NI EN SU MANTENIMIENTO DIARIO. TAMPOCO DEBERÁS REALIZAR LA COPIA MANUAL DE DATOS PERIODICAMENTE.</p>
+                            <h2>REDUCCIÓN DE COSTOS</h2>
+                            <p>LA IMPLEMENTACIÓN DE LA PLATAFORMA EN LA NUBE PUEDE GENERAR AHORROS SIGNIFICATIVOS DE COSTOS. NO TENDRÁS QUE INVERTIR EN COSTOSOS SERVIDORES, NI EN SU MANTENIMIENTO DIARIO. TAMPOCO DEBERÁS REALIZAR LA COPIA MANUAL DE DATOS PERIÓDICAMENTE.</p>
                           </div>
                         </div>
                       </div>
@@ -226,7 +227,7 @@
                 <div class="consecionaria">
                         <div class="consecionaria_texto">
                             <h1>Lutente Autos</h1>
-                            <p>El sistema de gestion orientado a consecionarias y agencias de vehículos.</p>
+                            <p>El sistema de gestión orientado a concesionarias y agencias de vehículos.</p>
                             <a href="pages/consecionaria_web.html" id="botonERP"> Conocer más  <img src="source/img/chevron-right-regular-24.png" alt=""></a>
                         </div>
                         
@@ -248,7 +249,7 @@
             </div>
             <div class="seccion_2">
                 <div class="footer_contacto">
-                    <a id="contacto_footer_boton" href="pages/formulario.html">Contactenos <img src="source/img/chevron-right-regular-24.png" alt=""></a>
+                    <a id="contacto_footer_boton" href="pages/formulario.html">Contáctenos <img src="source/img/chevron-right-regular-24.png" alt=""></a>
                     <div>
                         <a href="https://www.instagram.com/lutente.cloud/"><img src="source/img/instagram.png" alt=""></a>
                         <a href="#"><img src="source/img/linkedin.png" alt=""></a>
@@ -274,6 +275,7 @@
     <!-- Scripts -->
     <script src="js/header_main.js"></script>
      <script src="js/index.js"></script>
+    <script src="js/lenguajes.js"></script>
 
      <!-- AOS -->
      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -281,4 +283,4 @@
          AOS.init();
      </script>
 </body>
-</html>
+</html

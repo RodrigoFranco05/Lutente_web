@@ -1,8 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,100&display=swap');
 
 html {
-    scroll-behavior: smooth; /*Puede que no funcione en todos los browser*/
+    scroll-behavior: smooth; /*Puede que no funcione en todos los browser*/ 
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
     
+    font-style: normal;
 }
 
 body {
@@ -19,96 +30,11 @@ body {
     padding: 10px;
 }
 
-/*Header*/
-/*267-97*/
-.respmenu{
-    display: none;
-}
-
-.main-header {
-    position: fixed;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    width: 100%;
-    z-index: 1001;
-}
-
-.nav {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.navigation{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 0px;
-    list-style: none;
-    width: 100%;
-}
-
-.navigation li{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-  
-.navigation a{
-    display: flex;
-    margin: 0px 20px;
-    display: block;
-    text-decoration:none;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: large;
-}
-
-.navigation a:hover{
-    color: rgb(244, 177, 14);
-}
-
-.ingresoApp {
-    display: flex;
-    margin-right: 50px;
-}
-
-.ingresoApp a{
-    text-decoration: none;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    margin: 0px;
-    padding: 10px;
-    font-size: large;
-}
-
-.ingresoApp a:hover {
-    color: rgb(244, 177, 14);
-}
-
-.ingresar {
-    border-left: 1px solid white;
-}
-
-
-/*Logo Menu*/
-.contLogoLat {
-    display: flex;
-}
-
-.contLogoLat img {
-    width: 267px;
-}
-  
 
 /*Arrow espacio*/
 .spaceHead {
     width: 100%;
-    height: 100px;
+    height: 75px;
 }
 
 /*Primer imagen de main*/
@@ -127,7 +53,6 @@ body {
     margin-left: 13%;
     font-size: x-large;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
     width: 80%;
 }
 
@@ -273,7 +198,6 @@ body {
     flex-direction: column;
     align-items: center;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
     width: 550px;
 }
 
@@ -467,7 +391,6 @@ body {
     margin-left: 30px;
     margin-right: 30px;
     font-size: x-large;
-    font-weight: bold;
     text-align: center;
     line-height: 25px;
 }
@@ -525,7 +448,7 @@ body {
     list-style: none;
     font-size: x-large;
     font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+   
 }
 
 .imgsBeneficios {
@@ -582,210 +505,11 @@ body {
     border: 3px solid rgb(244, 177, 14);
 }
 
-/* Footer */
-.footerLutente {
-    display: flex;
-    align-items: center;
-    background-color: rgb(244, 177, 14);
-    margin-top: 100px;
-    height: 400px;
-}
-
-.cont1Footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 50%;
-    height: 100%;
-    margin-left: 40px;
-}
-
-.cont1Footer a{
-    text-align: none;
-}
-
-.cont1Footer div{
-    display: flex;
-}
-
-
-.cont1Footer p{
-    margin-left: 5px;
-    margin-top: 30px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: larger;
-}
-
-
-.lutenteFooter {
-    margin-top: 15px;
-    width: 300px;
-}
-
-.lutenteFooter:hover {
-    background-color: rgb(248, 247, 247);
-    border-radius: 30px;
-}
-
-.buttonFooter {
-    width: 300px;
-    height: 50px;
-    background-color: black;
-    color: white;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    font-size: large;
-    border-radius: 20px;
-    border: 0px;
-    margin-top: 30px;
-    cursor: pointer;
-}
-
-.buttonFooter:hover {
-    color: rgb(244, 177, 14);
-}
-
-.iconFooter {
-    margin-top: 30px;
-    width: 50px;
-}
-
-.iconFooter:hover {
-    transform: scale(1.2);
-    transition: all 0.6s;
-}
-
-.redesFooter {
-    display: flex;
-    justify-content: flex-start;
-}
-
-.redesFooter a {
-    margin-right: 50px;
-}
-
-.dispositivosFooter {
-    position: absolute;
-    height: 400px;
-    right: 0px;
-}
-
-/*Section Form*/
-
-.main-header-form{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: black;
-    width: 100%;
-}
-
-.sectionForm {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 100px;
-    width: 100%;
-    height: 100%;
-}
-
-.form {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 500px;
-}
-
-.form ul {
-    margin-top: 20px;
-    list-style: none;
-    width: 100%;
-}
-
-.listaForm {
-    display: flex;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10px;
-}
-
-.inputForm  {
-    width: 400px;
-    height: 20px;
-    background-color: rgba(244, 179, 14, 0);
-    border: none;
-    border-bottom: 1px solid rgb(244, 177, 14);
-    margin-left: 15px;
-}
-
-.inputForm:focus {
-    border-bottom: 1px solid black;
-    outline: none;
-}
-
-.inputForm::placeholder {
-    color: black;
-    font-family: 'Raleway', sans-serif;
-    font-size: large;
-    font-weight: bold;
-}
-
-.listaForm textarea {
-    margin-top: 10px;
-    height: 50px;
-}
-
-.iconForm {
-    width: 50px;
-    height: 50px;
-}
-
-.buttonForm {
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 150px;
-    height: 30px;
-    background-color: black;
-    color: white;
-    border: 1px solid white;
-    border-radius: 10px;
-    cursor: pointer;
-}
-
-.buttonForm:hover {
-    background-color: white;
-    color: black;
-    border: 1px solid black;
-    transition: all 0.6s;
-
-}
-
-
-
 @media (max-width: 1349px) {
     body {
         display: flex;
         flex-direction: column;
     }
-
-    /*Header*/
-    
-    .contLogoLat a img{
-        width: 200px;
-    }
-
-    .navigation a {
-        font-size: medium;
-        margin: 0px 15px;
-    }
-
-    .ingresoApp a {
-        font-size: medium;
-    }
-
     /*Arrow espacio*/
     .spaceHead {
         width: 100%;
@@ -897,7 +621,7 @@ body {
         margin-left: 0px;
         margin-top: 70px;
         font-size: x-large;
-        font-weight: bold;
+        
     }
 
     .listaBeneficios li {
@@ -942,18 +666,6 @@ body {
         margin: 0px;
     }
 
-    /*Footer*/
-    .redesFooter {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .dispositivosFooter {
-        display: flex;
-        position: absolute;
-        height: 300px;
-        right: 0px;
-    }
 }
 
 @media (max-width: 1024px) {
@@ -1209,7 +921,6 @@ body {
 
     /*Ventas*/
 
-
     .pruebaProcesos{
         display: flex;
         margin-top: 50px;
@@ -1280,61 +991,10 @@ body {
         font-size: medium;
     }
 
-
     .sectionVideos {
         margin-top: 100px;
     }
 
-    /*Footer*/
-
-    .dispositivosFooter {
-        display: none;
-    }
-
-    .cont1Footer {
-        display: flex;
-        width: 100%;
-        height: 100%;
-        margin-left: 0px; 
-        flex-direction: column;
-        align-items: center;
-        align-content: center;
-        justify-content: center;
-    }
-
-    .redesFooter a {
-        margin-right: 0px;
-    }
-
-    .redesFooter{
-        justify-content: center;
-        align-items: center;
-    }
-
-    .redesFooter a {
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        text-decoration: none;
-    }
-
-    .redesSocialesFooter{
-        display: flex;
-        width: 100%;
-    }
-
-    /*Formulario*/
-    .form {
-        width: 300px;
-    }
-
-    .form ul{
-        padding: 0px;
-    }
-
-    .inputForm {
-        width: 100%;
-    }
 }
 
 @media (max-width: 480px) {
@@ -1409,7 +1069,6 @@ body {
     .pruebaProcesos2{
         padding: 25px 25px 35px 35px;
     }
-
    
 }
 
@@ -1419,7 +1078,6 @@ body {
     .nav {
         justify-content: flex-start;
     }
-
 
     .pruebaProcesos{
         padding: 20px 20px 30px 30px;
@@ -1441,9 +1099,6 @@ body {
         margin-top: 100px;
     }
 
-
-    
-
     .contenedorHambur {
         margin-right: 15px;
     }
@@ -1460,6 +1115,4 @@ body {
     #usuarioResp {
         width: 40px;
     }
-
-    
 }

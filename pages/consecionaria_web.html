@@ -4,13 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lutente Web</title>
+    <title>Lutente</title>
     <script defer src="../js/consecionaria_web.js"></script>
     <link rel="stylesheet" href="../css/concesionaria_web.css">
+    <link rel="stylesheet" href="../css/header&footer.css">
     
     <link rel="icon" href="../faviicon.png" type="png" sizes="40">
     
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Font -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
@@ -18,41 +26,56 @@
 <body id="lutenteBody">
     <!-- Header -->
 
-    <header class="main-header">
-        <div class="contLogoLat">
-            <a href="#lutenteBody"><img src="../source/img/Home.png" alt="Imagen Menu Lutente"></a>
-        </div>
+    <header id="header">
+        <!--   NavBar  -->
+           <nav>
+                <div class="logo_header">
+                    <img id="logo" src="../source/img/Home_2.png" alt="Lutente">
+                </div>
+                <ul class="nav_links">
+                     <li class="first_link"><a class="nav_link_a" href="../index.html">Home</a></li>
+                     <li><div class="dropdown">
+                        <button class="dropbtn">Productos</button>
+                        <div class="dropdown-content">
+                          <a href="erp_web.html">ERP PyMEs</a>
+                          <a href="consecionaria_web.html">ERP Vehículos</a>
+                        </div>
+                      </div></li>
+                     <li><a class="nav_link_a" href="sobre_nosotros.html">Sobre nosotros</a></li>
+                     <li><a class="nav_link_a" href="formulario.html">Contacto</a></li>
+                </ul>
 
-        <nav class="nav">
-            <ul class="navigation">
-                <li><a href="#tituloModulo">Modulos</a></li>
-                <li><a href="#tituloVentas">Proceso de venta</a></li>
-                <li><a href="#tituloBeneficios">Beneficios</a></li>
-            </ul>
-
-            <div class="respmenu">
-                <div class="contenedorHambur">
-                    <img id="hamburResp" src="../source/img/menu.png" alt="menu hamburguesa responsive">
-                    <ul id="navigationResponsive" class="navigationResponsive">
-                        <li><a href="#tituloModulo">Modulos</a></li>
-                        <li><a href="#tituloVentas">Proceso de venta</a></li>
-                        <li><a href="#tituloBeneficios">Beneficios</a></li>
+                <div class="ingreso">
+                    <ul class="ingreso_nav">
+                        <il class="primero"><a href="formulario.html">Registro</a></il>
+                        <il><a href="https://lutente.com/DEMO/login.php">Ingreso</a></il>
                     </ul>
-                </div>
-                <div class="contenedorIngreso">
-                    <img id="usuarioResp" src="../source/img/usuarioNav.png" alt="usuario responsive">
-                    <div id="ingresoAppResp" class="ingresoAppResp">
-                        <a href="formulario_consecionaria.html">Registrarse</a>
-                        <a href="https://lutente.com/DEMO/login.php" class="ingresar">Ingresar</a>
+    
+                    <button><img id="lenguaje" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
                     </div>
+                    <div class="burger" id="burger">
+                        <img src="../source/img/menu-icon.png" alt="menu">
+                    </div>
+               </nav>
+    
+               <div id="menu_toggle" class="menu_toggle">
+    
+                <div class="menu_toggle_header">
+                    <button><img id="lenguaje_burguer" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
+                    <button> <img id="close_img" src="../source/img/x-regular-120.png" alt=""></button>
                 </div>
+    
+                <ul class="nav_links_burguer">
+                    <li><a class="nav_link_a" href="../index.html">Home</a></li>
+                        <li class="productos_burguer"><a href="erp_web.html">ERP PyMEs</a></li>
+                        <li class="productos_burguer"><a href="consecionaria_web.html">ERP Vehículos</a></li>
+                    <li><a class="nav_link_a" href="sobre_nosotros.html">Sobre nosotros</a></li>
+                    <li><a class="nav_link_a" href="formulario.html">Contacto</a></li>
+                    <li class="registro_burguer"><a href="formulario.html">Registro</a></li>
+                    <li><a href="https://lutente.com/DEMO/login.php">Ingreso</a></li>
+               </ul>
+        
             </div>
-        </nav>
-
-        <div class="ingresoApp">
-            <a href="formulario_consecionaria.html">Registrarse</a>
-            <a href="https://lutente.com/DEMO/login.php" class="ingresar">Ingresar</a>
-        </div>
     </header>
 
     <!-- Main -->
@@ -66,13 +89,13 @@
             <!-- Contenedor de img Main -->
             <div class="contLutenteCloud">
                 <div class="contLutenteCloudImg">
-                    <img class="imgLutenteCloud" src="../source/img/sectionInicioPrueba.png" id="imgMain1"
+                    <img class="imgLutenteCloud" src="../source/img/sectionInicioPruebaSinFondo.png" id="imgMain1"
                         alt="lutente explicacion">
                     <p>Lutente Cloud permite a concesionarias y agencias de vehículos a gestionar todas las áreas de
                         la empresa con mayor eficiencia y velocidad.</p>
                     <div class="contButtonLutenteCloud">
 
-                        <button class="buttonComienzaAhora"><a href="./pages/formulario.html">Solicita DEMO</a></button>
+                        <button class="buttonComienzaAhora"><a href="formulario.html">Solicita DEMO</a></button>
                         <button class="buttonComienzaAhora"><a href="https://lutente.com/DEMO/login.php">Entrar DEMO</a></button>
 
                     </div>
@@ -281,29 +304,33 @@
 
     </main>
 
-    <footer class="footerLutente">
-        <div class="cont1Footer">
-
-            <div class="redesFooter">
-                <a href="formulario_consecionaria.html">
-                    <button class="buttonFooter">CONTACTANOS</button>
-                </a>
-
-                <div class="redesSocialesFooter">
-                    <a href="#">
-                        <img src="../source/img/linkedin.png" alt="linkedin" class="iconFooter">
-                    </a>
-                    <a href="#">
-                        <img src="../source/img/instagram.png" alt="instagram" class="iconFooter">
-                    </a>
+    <footer>
+        <div class="wrapper">
+            <div class="seccion_1">
+                <img src="../source/img/sectionInicioPruebaSinFondo.png" alt="">
+                <a href="#"><img src="../source/img/chevron-up-regular-24.png" alt="Scroll Up"></a>
+            </div>
+            <div class="seccion_2">
+                <div class="footer_contacto">
+                    <a id="contacto_footer_boton" href="formulario.html">Contáctenos <img src="../source/img/chevron-right-regular-24.png" alt=""></a>
+                    <div>
+                        <a href="https://www.instagram.com/lutente.cloud/"><img src="../source/img/instagram.png" alt=""></a>
+                        <a href="#"><img src="../source/img/linkedin.png" alt=""></a>
+                    </div>
+                    
+                </div>
+                
+                <div class="footer_navegabilidad"> 
+                    <ul>
+                    <li><a href="erp_web.html">ERP PYMEs</a></li>
+                    <li><a href="consecionaria_web.html">ERP Vehículos</a></li>
+                     <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
+                     <li><a href="formulario.html">Contacto</a></li>
+                    </ul>
                 </div>
             </div>
-            <p>© Lutente 2023</p>
+            <p>®Lutente 2023</p>
         </div>
-
-
-        <img src="../source/img/prueba1Footer.png" alt="lutente desktop" class="dispositivosFooter">
-
     </footer>
 
     <!-- Link AOS -->
@@ -312,6 +339,8 @@
     <script>
         AOS.init();
     </script>
+
+    <script src="../js/header_main.js"></script>
 </body>
 
 </html>

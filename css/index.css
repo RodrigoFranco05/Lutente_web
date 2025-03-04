@@ -11,6 +11,11 @@
     font-style: normal;
 }
 
+
+#lenguaje{
+    filter: invert(0);
+    width: 40px;
+}
 /* --------- Main -------- */
 
 .hero_section{
@@ -473,10 +478,8 @@ input[type="radio"]{
     background-color: transparent;
     width: 400px;
     height: 400px;
-    /* box-shadow: 0px 0px 34px -7px rgba(0,0,0,0.75); */
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
-  }
-  
+    perspective: 1000px;
+}
   /* This container is needed to position the front and back side */
   .flip-box-inner {
     position: relative;
@@ -494,7 +497,6 @@ input[type="radio"]{
 
   .flip-box:hover {
     box-shadow: none;
-    transition: box-shadow 0.5s ease-in-out;
   }
 
   
@@ -513,7 +515,9 @@ input[type="radio"]{
     color: black;
     justify-content: flex-start !important;
     /* box-shadow: inset 0px 0px 117px -31px rgba(0,0,0,0.75); */
-    box-shadow: inset 0px 0px 117px 45px rgba(0,0,0,0.75);
+    /* box-shadow: inset 0px 0px 117px 45px rgba(0,0,0,0.75); */
+    /* box-shadow: inset 0px 0px 172px -60px rgba(0,0,0,0.75); */
+    box-shadow: inset 0px 0px 141px -30px rgba(0,0,0,0.75);
   }
   
   /* Style the back side */
@@ -538,6 +542,7 @@ input[type="radio"]{
 .flip-box-back h2{
     display: none;
 }
+
  /*============================================ */
 
 .seccion_4_lp{
