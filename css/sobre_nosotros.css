@@ -228,9 +228,9 @@ body{
     border-radius: 20px;
     border: rgba(240, 240, 240,0.5) 2px solid;
 
-
     position: relative; /* Necesario para el posicionamiento absoluto del <p> */
     overflow: hidden; /* Evita que el texto sobresalga */
+
     
 }
 
@@ -252,17 +252,9 @@ body{
 .grid_container div p {
     transition: opacity 0.3s ease-in-out;
     font-size: 1.5em;
+    
 }
 
-.grid_container div:hover p {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.grid_container div:not(:hover) p {
-    transition: none; /* Evita animación al salir */
-    opacity: 0;
-}
 
 .grid_container img{
     width: 80px;
@@ -408,6 +400,8 @@ body{
     justify-content: center;
 
     box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
+
+
 }
 
 .idea_2_1 h2{
