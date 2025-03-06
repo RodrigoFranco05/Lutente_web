@@ -59,6 +59,10 @@
     scale: 1.1;
 }
 
+#circle2 img{
+    width: 90%;
+}
+
 /* Posiciones exactas de los círculos en las aristas del pentágono */
 #circle1{ top: -40px; left: 38%; } /* Arriba */
 #circle2 { top: 25%; right: -35px; } /* Arriba Derecha */

@@ -4,7 +4,7 @@ const languages = {
         products: "Productos",
         erp_pymes: "ERP PyMEs",
         erp_vehicles: "ERP Vehículos",
-        about_us: "Sobre nosotros",
+        about_us: "Nosotros",
         contact: "Contacto",
         register: "Registro",
         login: "Ingreso",
