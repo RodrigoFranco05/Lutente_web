@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 p.textContent = textos[index];
                 p.style.opacity = "1"; // Muestra el nuevo texto suavemente
-            }, 200); // Pequeño retraso antes de cambiar el texto
+            }, 0); // Pequeño retraso antes de cambiar el texto
         });
 
         div.addEventListener("mouseout", () => {
@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
             setTimeout(() => {
                 p.textContent = textoOriginal;
                 p.style.opacity = "1"; 
-            }, 200);
+            }, 0);
         });
     });
 });
