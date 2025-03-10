@@ -16,35 +16,71 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-document.addEventListener("DOMContentLoaded", function () {
-    const toggleLanguageBtn = document.getElementById("toggle_lenguaje");
-    const toggleLanguageBurger = document.getElementById("lenguaje_burguer");
+// Store the current language (default to Spanish)
+let currentLanguage = localStorage.getItem('language') || 'es';
+
+// Function to set all texts according to the selected language
+function setLanguage(lang) {
+    // Save the language preference
+    localStorage.setItem('language', lang);
+    currentLanguage = lang;
+    
+    // Get all elements with data-lang attribute
+    const elements = document.querySelectorAll('[data-lang]');
+    
+    // Update each element's text with the corresponding translation
+    elements.forEach(element => {
+        const key = element.getAttribute('data-lang');
+        if (languages[lang] && languages[lang][key]) {
+            // If the element is an input with placeholder
+            if (element.placeholder) {
+                element.placeholder = languages[lang][key];
+            } 
+            // For other elements
+            else {
+                element.innerHTML = languages[lang][key];
+            }
+        }
+    });
+
+    // Actualizar las imágenes de las banderas según el idioma
+    const flagSrc = lang === "es" ? "./source/img/spain.png" : "./source/img/english.png";
+    
+    // Obtener referencias a los elementos de imagen de bandera
     const flagIcon = document.getElementById("lenguaje");
     const flagIconBurger = document.getElementById("lenguaje_burguer");
-    let currentLang = localStorage.getItem("language") || "es";
-
-    function updateLanguage(lang) {
-        document.querySelectorAll("[data-lang]").forEach((element) => {
-            const key = element.getAttribute("data-lang");
-            element.innerHTML = languages[lang][key];
-        });
-
-        const flagSrc = lang === "es" ? "./source/img/spain.png" : "./source/img/english.png";
+    
+    // Actualizar las rutas de las imágenes si los elementos existen
+    if (flagIcon) {
         flagIcon.src = flagSrc;
-        flagIconBurger.src = flagSrc;
-
-        localStorage.setItem("language", lang);
     }
+    
+    if (flagIconBurger) {
+        flagIconBurger.src = flagSrc;
+    }
+}
 
-    toggleLanguageBtn.addEventListener("click", () => {
-        currentLang = currentLang === "es" ? "en" : "es";
-        updateLanguage(currentLang);
-    });
-
-    toggleLanguageBurger.addEventListener("click", () => {
-        currentLang = currentLang === "es" ? "en" : "es";
-        updateLanguage(currentLang);
-    });
-
-    updateLanguage(currentLang);
+// Set the initial language
+document.addEventListener('DOMContentLoaded', () => {
+    setLanguage(currentLanguage);
+    
+    // Add event listeners for language toggle buttons
+    const toggleLanguageBtn = document.getElementById('toggle_lenguaje');
+    const toggleLanguageBurguerBtn = document.getElementById('lenguaje_burguer');
+    
+    if (toggleLanguageBtn) {
+        toggleLanguageBtn.addEventListener('click', () => {
+            // Toggle between English and Spanish
+            const newLang = currentLanguage === 'es' ? 'en' : 'es';
+            setLanguage(newLang);
+        });
+    }
+    
+    if (toggleLanguageBurguerBtn) {
+        toggleLanguageBurguerBtn.addEventListener('click', () => {
+            // Toggle between English and Spanish
+            const newLang = currentLanguage === 'es' ? 'en' : 'es';
+            setLanguage(newLang);
+        });
+    }
 });
