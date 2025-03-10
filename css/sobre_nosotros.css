@@ -30,7 +30,7 @@ body{
     display: flex;
   
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 
 }
 
@@ -84,86 +84,8 @@ body{
     border-bottom: 5px solid #f4b10e;
 }
 
-/* Seccion cards */
-/* .seccion_2{
-    padding: 5%;
-}
 
-.seccion_2 .seccion_3_conteiner{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.seccion_2 div h3{
-    font-size: 4em;
-    font-weight: 300;
-    margin-bottom: 60px;
-}
-
-.grid_container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(33vh, 1fr));
-    grid-template-rows: repeat(2, auto);
-    gap: 30px;
-    width: 80%;
-    max-width: 141vh;
-    justify-items: center
-    
-}
-
-.grid_container div{
-   
-    height: 33vh;
-    width: 33vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    transition: 0.7s;
-    box-shadow: 0px 0px 55px -5px rgba(0,0,0,0.75);
-    background-color: #f4b10e;
-    box-shadow: inset 0px 0px 141px -30px rgba(0,0,0,0.75);
-    border-radius: 20px;
-
-    
-}
-
-.grid_container div:hover{
-   transform: scale(1.05);
-   background-color: #0e0e0e;
-   color: #f0f0f0;
-   justify-content: center;
-}
-
-
-.grid_container div:hover img{
-    filter: invert(1);
-    transition: opacity 0.3s ease-in-out;
-    display: none;
-}
-
-.grid_container div p {
-    transition: opacity 0.3s ease-in-out;
-    font-size: 1.5em;
-}
-
-
-.grid_container img{
-    width: 80px;
-    padding:15px;
-    margin: 25% 0 0;
-}
-
-.grid_container p{
-    width: 70%;
-    text-align: center;
-   
-} */
-
-
-                                   /* seccion cards idea 2*/
+/*==================== seccion cards idea 2 =========================== */
  
 .seccion_1_hero .seccion_2{
     padding: 5%;
@@ -270,108 +192,6 @@ body{
     text-align: center;
    
 }
-
-/* *=========================================================*/
-
-/* .idea_2{
-    width: 80%;
-    margin: 50px auto;
-    height: 85vh;
-    display: flex;
-    flex-direction: column;
-    
-    
-    
-    color: #0e0e0e;
-
-   box-shadow: 44px 50px 84px -38px rgba(0,0,0,1);;
-}
-
-.idea_2_1{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-    
-    color: white;
-}
-
-.idea_2_2{
-   
-    display: flex;
-    
-    align-items: center;
-    justify-content: center;
-    height: 50%;
-}
-
-.idea_2 .idea_2_1 div{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    padding: 0 5% 0 0 ;
-    background-color: #0e0e0e;
-}
-
-.idea_2 .idea_2_2 div{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 50%;
-    height: 100%;
-    padding: 0 0 0 5%;
-    background-color: #f4b10e;
-}
-
-.idea_2 h2{
-    font-size: 3em;
-    font-weight: 300;
-    margin-bottom: 30px;
-}
-
-.idea_2 p{
-    font-size: 1.1em;
-    text-align: justify;
-    width: 70%;
-}
-
-.idea_2 img{
-    width: 50%;
-    margin-top: 50px;
-    
-    overflow: hidden;
-}
-
-
-.idea_2_2 span{
-    width: 50%;
-    height: 100%;
-    background-image: url("../source/img/Texto\ del\ párrafo\ \(9\).png");
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 180%;
-
-    
-    box-shadow:  inset -68px 0px 84px -38px rgba(0,0,0,0.75);
-}
-
-.idea_2_1 span{
-    width: 50%;
-    height: 100%;
-    background-image: url("../source/img/Texto\ del\ párrafo\ \(8\).png");
-    
-    
-    box-shadow:inset 80px 0px 79px -10px rgba(0,0,0,0.75);
-
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 190%;
-} */
-
 
 .idea_2{
     width: 90vw;

@@ -36,16 +36,16 @@
                      <img id="logo" src="../source/img/Home_2.png" alt="Lutente">
                 </div>
                 <ul class="nav_links">
-                     <li class="first_link"><a class="nav_link_a" href="../index.html">Home</a></li>
+                     <li class="first_link"><a class="nav_link_a" href="../index.html" data-lang="home">Home</a></li>
                      <li><div class="dropdown">
-                        <button class="dropbtn">Productos</button>
+                        <button class="dropbtn" data-lang="products">Productos</button>
                         <div class="dropdown-content">
-                          <a href="#">ERP PyMEs</a>
-                          <a href="consecionaria_web.html">ERP Vehículos</a>
+                          <a href="#" data-lang="erp_pymes">ERP PyMEs</a>
+                          <a href="consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a>
                         </div>
                       </div></li>
-                      <li><a class="nav_link_a" href="sobre_nosotros.html">Sobre nosotros</a></li>
-                      <li><a class="nav_link_a" href="formulario.html">Contacto</a></li>
+                      <li><a class="nav_link_a" href="sobre_nosotros.html" data-lang="about_us">Sobre nosotros</a></li>
+                      <li><a class="nav_link_a" href="formulario.html" data-lang="contact">Contacto</a></li>
                 </ul>
 
                 <div class="ingreso">
@@ -83,7 +83,6 @@
     </header>
     <main>
 
-        <div class="principal">
         <section class="hero_section">
 
             <article class="hero_text">
@@ -154,7 +153,7 @@
             </article>
 
         </section>
-        </div>
+        
         <section class="erp_texto_1">
             <article>
                 <div data-aos="fade-up" data-aos-duration="800"class="parrafo_texto_1">
@@ -238,6 +237,7 @@
     <script src="../js/modulo.js"></script>
     <script src="../js/animacion_numero.js"></script>
     <script src="../js/header_main.js"></script>
+    <script src="../js/lenguajes.js"></script>
     
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
