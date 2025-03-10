@@ -95,6 +95,10 @@ nav {
     margin-right: 9px;
 }
 
+.ingreso_nav {
+    min-width: 152px;
+}
+
 .ingreso {
     display: flex;
     align-items: center;
