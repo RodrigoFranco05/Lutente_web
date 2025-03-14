@@ -26,57 +26,57 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
-    <header id="header">
-        <!--   NavBar  -->
-           <nav>
-                <div class="logo_header">
-                    <img id="logo" src="../source/img/Home_2.png" alt="Lutente">
-                </div>
-                <ul class="nav_links">
-                     <li class="first_link"><a class="nav_link_a" href="../index.html">Home</a></li>
-                     <li><div class="dropdown">
-                        <button class="dropbtn">Productos</button>
-                        <div class="dropdown-content">
-                          <a href="erp_web.html">ERP PyMEs</a>
-                          <a href="consecionaria_web.html">ERP Vehículos</a>
-                        </div>
-                      </div></li>
-                     <li><a class="nav_link_a" href="sobre_nosotros.html">Sobre nosotros</a></li>
-                     <li><a class="nav_link_a" href="formulario.html">Contacto</a></li>
+  <header id="header">
+    <!--   NavBar  -->
+       <nav>
+            <div class="logo_header">
+                <img id="logo" src="../source/img/Home_2.png" alt="Lutente">
+            </div>
+            <ul class="nav_links">
+                 <li class="first_link"><a class="nav_link_a" href="../index.html" data-lang="home">Home</a></li>
+                 <li><div class="dropdown">
+                    <button class="dropbtn" data-lang="products">Productos</button>
+                    <div class="dropdown-content">
+                      <a href="erp_web.html" data-lang="erp_pymes">ERP PyMEs</a>
+                      <a href="consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a>
+                    </div>
+                  </div></li>
+                 <li><a class="nav_link_a" href="sobre_nosotros.html" data-lang="about_us">Nosotros</a></li>
+                 <li><a class="nav_link_a" href="formulario.html" data-lang="contact">Contacto</a></li>
+            </ul>
+
+            <div class="ingreso">
+                <ul class="ingreso_nav">
+                    <il class="primero"><a href="formulario.html" data-lang="register">Registro</a></il>
+                    <il><a href="https://lutente.com/DEMO/login.php" data-lang="login">Ingreso</a></il>
                 </ul>
 
-                <div class="ingreso">
-                    <ul class="ingreso_nav">
-                        <il class="primero"><a href="#">Registro</a></il>
-                        <il><a href="https://lutente.com/DEMO/login.php">Ingreso</a></il>
-                    </ul>
+                <button id="toggle_lenguaje"><img id="lenguaje" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
+                </div>
+                <div class="burger" id="burger">
+                    <img src="../source/img/menu-icon.png" alt="menu">
+                </div>
+           </nav>
+
+           <div id="menu_toggle" class="menu_toggle">
+
+            <div class="menu_toggle_header">
+                <button><img id="lenguaje_burguer" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
+                <button> <img id="close_img" src="../source/img/x-regular-120.png" alt=""></button>
+            </div>
+
+            <ul class="nav_links_burguer">
+                <li><a class="nav_link_a" href="../index.html" data-lang="home">Home</a></li>
+                    <li class="productos_burguer"><a href="erp_web.html" data-lang="erp_pymes">ERP PyMEs</a></li>
+                    <li class="productos_burguer"><a href="consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a></li>
+                <li><a class="nav_link_a" href="sobre_nosotros.html" data-lang="about_us">Nosotros</a></li>
+                <li><a class="nav_link_a" href="formulario.html" data-lang="contact">Contacto</a></li>
+                <li class="registro_burguer"><a href="formulario.html" data-lang="register">Registro</a></li>
+                <li><a href="https://lutente.com/DEMO/login.php" data-lang="login">Ingreso</a></li>
+           </ul>
     
-                    <button id="toggle_lenguaje"><img id="lenguaje" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
-                    </div>
-                    <div class="burger" id="burger">
-                      <img src="../source/img/menu-icon.png" alt="menu">
-                  </div>
-             </nav>
-  
-             <div id="menu_toggle" class="menu_toggle">
-  
-              <div class="menu_toggle_header">
-                  <button><img id="lenguaje_burguer" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
-                  <button> <img id="close_img" src="../source/img/x-regular-120.png" alt=""></button>
-              </div>
-  
-              <ul class="nav_links_burguer">
-                  <li><a class="nav_link_a" href="../index.html">Home</a></li>
-                      <li class="productos_burguer"><a href="erp_web.html">ERP PyMEs</a></li>
-                      <li class="productos_burguer"><a href="consecionaria_web.html">ERP Vehículos</a></li>
-                  <li><a class="nav_link_a" href="sobre_nosotros.html">Sobre nosotros</a></li>
-                  <li><a class="nav_link_a" href="formulario.html">Contacto</a></li>
-                  <li class="registro_burguer"><a href="formulario.html">Registro</a></li>
-                  <li><a href="https://lutente.com/DEMO/login.php">Ingreso</a></li>
-             </ul>
-      
-          </div>
-    </header>
+        </div>
+</header>
 
     <main>
 
@@ -88,26 +88,26 @@
               <ul>
                 <li class="listaForm">
                   <label for="name"><img src="../source/img/usuario.png" alt="usuario name" class="iconForm"></label>
-                  <input type="text"  name="name" placeholder="Nombre" class="inputForm" id="name" required />
+                  <input type="text" name="name" placeholder="Nombre" class="inputForm" id="name" required data-lang="name_placeholder" />
                 </li>
                 <li class="listaForm">
                   <label for="company"><img src="../source/img/maletin.png" alt="compania" class="iconForm"></label>
-                  <input type="text"  name="company" placeholder="Empresa/Negocio (opcional)" id="business" class="inputForm"/>
+                  <input type="text" name="company" placeholder="Empresa/Negocio (opcional)" id="business" class="inputForm" data-lang="company_placeholder" />
                 </li>
                 <li class="listaForm">
                   <label for="number"><img src="../source/img/telefono-inteligente.png" alt="celular" class="iconForm"></label>
-                  <input type="text" name="number" placeholder="Número (opcional)" id="number" class="inputForm" />
+                  <input type="text" name="number" placeholder="Número (opcional)" id="number" class="inputForm" data-lang="number_placeholder" />
                 </li>
                 <li class="listaForm">
                   <label for="mail"><img src="../source/img/correo-electronico.png" alt="correo" class="iconForm"></label>
-                  <input type="email" name="email" placeholder="Email" class="inputForm" id="email"  required />
+                  <input type="email" name="email" placeholder="Email" class="inputForm" id="email" required data-lang="email_placeholder" />
                 </li>
                 <li class="listaForm">
                   <label for="comments"><img src="../source/img/mensaje.png" alt="mensaje" class="iconForm"></label>
-                  <textarea name="comments" placeholder="Comentario (opcional)" id="message" class="inputForm"></textarea>
+                  <textarea name="comments" placeholder="Comentario (opcional)" id="message" class="inputForm" data-lang="comments_placeholder"></textarea>
                 </li>
               </ul>
-              <input type="submit" value="Enviar" class="buttonForm">
+              <input type="submit" value="Enviar" class="buttonForm" data-lang-value="submit_button">
             </form>
         
           </section>
@@ -116,7 +116,7 @@
   <div id="status-modal" class="modal">
   <div class="modal-content">
       <p id="modal-message"></p>
-      <button id="close-modal">Cerrar</button>
+      <button id="close-modal" data-lang="close_modal">Cerrar</button>
   </div>
 </div>
 
@@ -124,37 +124,39 @@
     </main>
 
     <footer>
-        <div class="wrapper">
-            <div class="seccion_1">
-                <img src="../source/img/sectionInicioPruebaSinFondo.png" alt="">
-                <a href="#"><img src="../source/img/chevron-up-regular-24.png" alt="Scroll Up"></a>
-            </div>
-            <div class="seccion_2">
-                <div class="footer_contacto">
-                    <a id="contacto_footer_boton" href="formulario.html">Contáctenos <img src="../source/img/chevron-right-regular-24.png" alt=""></a>
-                    <div>
-                        <a href="https://www.instagram.com/lutente.cloud/"><img src="../source/img/instagram.png" alt=""></a>
-                        <a href="#"><img src="../source/img/linkedin.png" alt=""></a>
-                    </div>
-                    
-                </div>
-                
-                <div class="footer_navegabilidad"> 
+      <div class="wrapper">
+          <div class="seccion_1">
+              <img src="../source/img/sectionInicioPruebaSinFondo.png" alt="">
+              <a href="#"><img src="../source/img/chevron-up-regular-24.png" alt="Scroll Up"></a>
+          </div>
+          <div class="seccion_2">
+              <div class="footer_contacto">
+                  <a id="contacto_footer_boton" href="formulario.html" data-lang="contact_us">Contáctenos <img src="../source/img/chevron-right-regular-24.png" alt=""></a>
+                  <div>
+                      <a href="https://www.instagram.com/lutente.cloud/"><img src="../source/img/instagram.png" alt=""></a>
+                      <a href="#"><img src="../source/img/linkedin.png" alt=""></a>
+                  </div>
+                  
+              </div>
+              
+              <div class="footer_navegabilidad"> 
                   <ul>
-                  <li><a href="erp_web.html">ERP PYMEs</a></li>
-                  <li><a href="consecionaria_web.html">ERP Vehículos</a></li>
-                   <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-                   <li><a href="formulario.html">Contacto</a></li>
+                  <li><a href="erp_web.html" data-lang="erp_pymes">ERP PYMEs</a></li>
+                  <li><a href="consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a></li>
+                   <li><a href="sobre_nosotros.html" data-lang="about_us">Sobre nosotros</a></li>
+                   <li><a href="formulario.html" data-lang="contact">Contacto</a></li>
                   </ul>
               </div>
-            </div>
-            <p>®Lutente 2023</p>
-        </div>
-    </footer>
+          </div>
+          <p data-lang="copyright">®Lutente 2023</p>
+      </div>
+  </footer>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script src="../js/formulario.js"></script>
     <script src="../js/header_main.js"></script>
+    <script src="../js/lenguajes.js"></script>
+    <script src="../js/toggle_lang.js"></script>
 </body>
 </html>

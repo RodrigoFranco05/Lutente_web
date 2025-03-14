@@ -114,4 +114,86 @@
     transition: 0.7s;
 }
 
+@media (max-width: 550px) {
+    .modulos_erp .container{
+        margin-right: 0;
+        margin: 20px 0;
+    }
+
+    /* Posiciones exactas de los círculos en las aristas del pentágono */
+    #circle1{ top: 0px; left: 38%; } /* Arriba */
+    #circle2 { top: 25%; right: 0px; } /* Arriba Derecha */
+    #circle3 { bottom: 15px; left: 63%; } /* Abajo Derecha */
+    #circle4 { bottom: 15px; left: 13%; } /* Abajo Izquierda */
+    #circle5 { top: 25%; left: 0px;} /* Arriba Izquierda */
+
+    .pentagon {
+    width: 300px;
+    height: 300px;
+    
+    }
+
+    .pentagon2{
+    width: 295px;
+    height: 295px;
+    background-size: 40%;   /* tamaño del logo de bakground*/
+    
+    top: 50%;
+    left: 50%;
+
+    
+    }
+
+    .circle {
+    
+    width: 100px;
+    height: 100px;
+    
+    }
+}
+
+@media (max-width: 460px) {
+    .modulos_erp .container{
+        margin-right: 0;
+        margin: 20px 0;
+    }
+
+    .container{
+        width: 300px;
+        height: 300px;
+        margin-right: 0;
+    }
+
+    /* Posiciones exactas de los círculos en las aristas del pentágono */
+    #circle1{ top: 0px; left: 35%; } /* Arriba */
+    #circle2 { top: 25%; right: 0px; } /* Arriba Derecha */
+    #circle3 { bottom: 15px; left: 55%; } /* Abajo Derecha */
+    #circle4 { bottom: 15px; left: 13%; } /* Abajo Izquierda */
+    #circle5 { top: 25%; left: 0px;} /* Arriba Izquierda */
+
+    .pentagon {
+    width: 200px;
+    height: 200px;
+    
+    }
+
+    .pentagon2{
+    width: 195px;
+    height: 195px;
+    background-size: 40%;   /* tamaño del logo de bakground*/
+    
+    top: 50%;
+    left: 50%;
+
+    
+    }
+
+    .circle {
+    
+    width: 100px;
+    height: 100px;
+    
+    }
+}
+
 

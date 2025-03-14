@@ -30,52 +30,53 @@
         <!--   NavBar  -->
            <nav>
                 <div class="logo_header">
-                    <img id="logo" src="../source/img/Home_2.png" alt="Lutente">
+                     <img id="logo" src="../source/img/Home_2.png" alt="Lutente">
                 </div>
                 <ul class="nav_links">
-                     <li class="first_link"><a class="nav_link_a" href="../index.html">Home</a></li>
+                     <li class="first_link"><a class="nav_link_a" href="../index.html" data-lang="home">Home</a></li>
                      <li><div class="dropdown">
-                        <button class="dropbtn">Productos</button>
+                        <button class="dropbtn" data-lang="products">Productos</button>
                         <div class="dropdown-content">
-                          <a href="erp_web.html">ERP PyMEs</a>
-                          <a href="consecionaria_web.html">ERP Vehículos</a>
+                          <a href="erp_web.html" data-lang="erp_pymes">ERP PyMEs</a>
+                          <a href="consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a>
                         </div>
                       </div></li>
-                     <li><a class="nav_link_a" href="sobre_nosotros.html">Sobre nosotros</a></li>
-                     <li><a class="nav_link_a" href="formulario.html">Contacto</a></li>
+                      <li><a class="nav_link_a" href="sobre_nosotros.html" data-lang="about_us">Sobre nosotros</a></li>
+                      <li><a class="nav_link_a" href="formulario.html" data-lang="contact">Contacto</a></li>
                 </ul>
 
                 <div class="ingreso">
-                    <ul class="ingreso_nav">
-                        <il class="primero"><a href="formulario.html">Registro</a></il>
-                        <il><a href="https://lutente.com/DEMO/login.php">Ingreso</a></il>
-                    </ul>
-    
-                    <button id="toggle_lenguaje"><img id="lenguaje" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
-                    </div>
-                    <div class="burger" id="burger">
-                        <img src="../source/img/menu-icon.png" alt="menu">
-                    </div>
-               </nav>
-    
-               <div id="menu_toggle" class="menu_toggle">
-    
-                <div class="menu_toggle_header">
-                    <button><img id="lenguaje_burguer" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
-                    <button> <img id="close_img" src="../source/img/x-regular-120.png" alt=""></button>
+                <ul class="ingreso_nav">
+                    <il class="primero"><a href="formulario.html" data-lang="register">Registro</a></il>
+                    <il><a href="https://lutente.com/DEMO/login.php" data-lang="login">Ingreso</a></il>
+                </ul>
+
+                <button id="toggle_lenguaje"><img id="lenguaje" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
                 </div>
-    
-                <ul class="nav_links_burguer">
-                    <li><a class="nav_link_a" href="../index.html">Home</a></li>
-                        <li class="productos_burguer"><a href="erp_web.html">ERP PyMEs</a></li>
-                        <li class="productos_burguer"><a href="consecionaria_web.html">ERP Vehículos</a></li>
-                    <li><a class="nav_link_a" href="sobre_nosotros.html">Sobre nosotros</a></li>
-                    <li><a class="nav_link_a" href="formulario.html">Contacto</a></li>
-                    <li class="registro_burguer"><a href="formulario.html">Registro</a></li>
-                    <li><a href="https://lutente.com/DEMO/login.php">Ingreso</a></li>
-               </ul>
-        
+
+                <div class="burger" id="burger">
+                    <img src="../source/img/menu-icon.png" alt="menu">
+                </div>
+           </nav>
+
+           <div id="menu_toggle" class="menu_toggle">
+
+            <div class="menu_toggle_header">
+                <button><img id="lenguaje_burguer" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
+                <button> <img id="close_img" src="../source/img/x-regular-120.png" alt=""></button>
             </div>
+
+            <ul class="nav_links_burguer">
+                <li><a class="nav_link_a" href="../index.html" data-lang="home">Home</a></li>
+                    <li class="productos_burguer"><a href="erp_web.html" data-lang="erp_pymes">ERP PyMEs</a></li>
+                    <li class="productos_burguer"><a href="consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a></li>
+                <li><a class="nav_link_a" href="sobre_nosotros.html" data-lang="about_us">Sobre nosotros</a></li>
+                <li><a class="nav_link_a" href="formulario.html" data-lang="contact">Contacto</a></li>
+                <li class="registro_burguer"><a href="formulario.html" data-lang="register">Registro</a></li>
+                <li><a href="https://lutente.com/DEMO/login.php" data-lang="login">Ingreso</a></li>
+           </ul>
+    
+        </div>
     </header>
 
     <!-- Main -->
@@ -91,12 +92,12 @@
                 <div class="contLutenteCloudImg">
                     <img class="imgLutenteCloud" src="../source/img/sectionInicioPruebaSinFondo.png" id="imgMain1"
                         alt="lutente explicacion">
-                    <p>Lutente Cloud permite a concesionarias y agencias de vehículos a gestionar todas las áreas de
+                    <p data-lang="lutente_cloud_desc">Lutente Cloud permite a concesionarias y agencias de vehículos a gestionar todas las áreas de
                         la empresa con mayor eficiencia y velocidad.</p>
                     <div class="contButtonLutenteCloud">
 
-                        <a href="formulario.html" class="buttonComienzaAhora">Solicita DEMO</a>
-                        <a href="https://lutente.com/DEMO/login.php" class="buttonComienzaAhora">Entrar DEMO</a>
+                        <a href="formulario.html" class="buttonComienzaAhora" data-lang="request_demo">Solicita DEMO</a>
+                        <a href="https://lutente.com/DEMO/login.php" class="buttonComienzaAhora" data-lang="enter_demo">Entrar DEMO</a>
 
                     </div>
                 </div>
@@ -111,7 +112,7 @@
             <!-- Titulo -->
             <div class="espacioParaHref" id="tituloModulo"></div>
             <div class="contTituloSection">
-                <h2 class="tituloSection">Modulos</h2>
+                <h2 class="tituloSection" data-lang="modules">Modulos</h2>
             </div>
 
             <!-- Contenedor Modulos-->
@@ -130,27 +131,27 @@
                 </div>
                 <div class="modulosTextos" data-aos="fade-up" data-aos-delay="200">
                     <div class="contenedorModulo animate__animated animate__fadeInRightBig" id="modulo1">
-                        <h2 class="tituloContenedorModulo">INVENTARIO</h2>
-                        <p class="textoModulo">Inventario de vehículos. Integración con InfoAutos. Fácil ingreso/egreso.
+                        <h2 class="tituloContenedorModulo" data-lang="inventory_module">INVENTARIO</h2>
+                        <p class="textoModulo" data-lang="inventory_desc">Inventario de vehículos. Integración con InfoAutos. Fácil ingreso/egreso.
                             Fácil actualizacion de precios.</p>
                     </div>
                     <div class="contenedorModulo animate__animated animate__fadeInRightBig" id="modulo2">
-                        <h2 class="tituloContenedorModulo">VENTAS</h2>
-                        <p class="textoModulo">Cierre e Historial de Ventas. Créditos Prendarios. Clientes.</p>
+                        <h2 class="tituloContenedorModulo" data-lang="sales_module">VENTAS</h2>
+                        <p class="textoModulo" data-lang="sales_desc">Cierre e Historial de Ventas. Créditos Prendarios. Clientes.</p>
                     </div>
                     <div class="contenedorModulo animate__animated animate__fadeInRightBig" id="modulo3">
-                        <h2 class="tituloContenedorModulo">ADMINISTRACIÓN</h2>
-                        <p class="textoModulo">Seguimiento Post Venta. Caja. Proveedores. Transacciones/ Movimientos.
+                        <h2 class="tituloContenedorModulo" data-lang="admin_module">ADMINISTRACIÓN</h2>
+                        <p class="textoModulo" data-lang="admin_desc">Seguimiento Post Venta. Caja. Proveedores. Transacciones/ Movimientos.
                             Asignación de trámites. Gastos.</p>
                     </div>
                     <div class="contenedorModulo animate__animated animate__fadeInRightBig" id="modulo4">
-                        <h2 class="tituloContenedorModulo">GESTORÍA</h2>
-                        <p class="textoModulo">Trámites. Recepción. Preparación. Presentación Administración.
+                        <h2 class="tituloContenedorModulo" data-lang="registry_module">GESTORÍA</h2>
+                        <p class="textoModulo" data-lang="registry_desc">Trámites. Recepción. Preparación. Presentación Administración.
                             Seguimiento. Retiro y cierre.</p>
                     </div>
                     <div class="contenedorModulo animate__animated animate__fadeInRightBig" id="modulo5">
-                        <h2 class="tituloContenedorModulo">ANALÍTICOS</h2>
-                        <p class="textoModulo">Dashboard. Métricas. Proyección de ventas. Toma de desiciones.</p>
+                        <h2 class="tituloContenedorModulo" data-lang="analytics_module">ANALÍTICOS</h2>
+                        <p class="textoModulo" data-lang="analytics_desc">Dashboard. Métricas. Proyección de ventas. Toma de desiciones.</p>
                     </div>
                 </div>
             </div>
@@ -160,7 +161,7 @@
         <section class="sectionProcesoVenta" id="tituloProcesoVentas">
             <div class="espacioParaHref" id="tituloVentas"></div>
             <div class="contTituloSection">
-                <h2 class="tituloSection">Proceso de ventas</h2>
+                <h2 class="tituloSection" data-lang="sales_process">Proceso de ventas</h2>
             </div>
             <div id="ProcesosEspacio" class="ProcesosEspacio"></div>
             <!-- Procesos de arriba -->
@@ -171,23 +172,23 @@
             <div class="contProcesos" data-aos="fade-up" data-aos-delay="200">
                 <a href="#ProcesosEspacio">      
                 <div  class="pruebaProcesos" id="proceso1">
-                    <p class="pPrueba">Cierre de venta</p>
+                    <p class="pPrueba" data-lang="sales_closing">Cierre de venta</p>
                 </div>
             </a>
             
             <a href="#ProcesosEspacio">
                 <div href="#ProcesosEspacio" class="pruebaProcesos" id="proceso2">
-                    <p class="pPrueba">Imputación pagos</p>
+                    <p class="pPrueba" data-lang="payment_registration">Imputación pagos</p>
                 </div>
             </a>
             <a href="#ProcesosEspacio">
                 <div href="#ProcesosEspacio" class="pruebaProcesos" id="proceso3">
-                    <p class="pPrueba">Asignación de trámite</p>
+                    <p class="pPrueba" data-lang="procedure_assignment">Asignación de trámite</p>
                 </div>
             </a>
             <a href="#ProcesosEspacio">
                 <div href="#ProcesosEspacio" class="pruebaProcesos" id="proceso4">
-                    <p class="pPrueba">Entrega de carpeta</p>
+                    <p class="pPrueba" data-lang="folder_delivery">Entrega de carpeta</p>
                 </div>
             </a>
         </div>
@@ -196,17 +197,17 @@
         <div class="contProcesos2" data-aos="fade-up" data-aos-delay="300">
             <a href="#ProcesosEspacio">
             <div class="pruebaProcesos2" id="proceso5">
-                    <p class="pPrueba2">Gestión de Prendas</p>
+                    <p class="pPrueba2" data-lang="pledge_management">Gestión de Prendas</p>
                 </div>
                 </a>
                 <a href="#ProcesosEspacio">
                 <div class="pruebaProcesos2" id="proceso6">
-                    <p class="pPrueba2">Aprobación</p>
+                    <p class="pPrueba2" data-lang="approval">Aprobación</p>
                 </div>
 </a>
 <a href="#ProcesosEspacio">
                 <div class="pruebaProcesos2" id="proceso7">
-                    <p class="pPrueba2">Gestión de trámite</p>
+                    <p class="pPrueba2" data-lang="procedure_management">Gestión de trámite</p>
                 </div>
             </a>
         </div>
@@ -216,8 +217,8 @@
                     <img class="imgProcesos" src="../source/img/ventas.png" alt="ventas">
 
                     <div class="ProcesoText">
-                        <h1>Cierre de venta</h1>
-                        <p>Una vez realizado el acuerdo con el cliente se registra la venta en la plataforma incluyendo el alta del cliente.</p>
+                        <h1 data-lang="sales_closing_title">Cierre de venta</h1>
+                        <p data-lang="sales_closing_desc">Una vez realizado el acuerdo con el cliente se registra la venta en la plataforma incluyendo el alta del cliente.</p>
                     </div>
 
                 </div>
@@ -225,48 +226,48 @@
                     <img class="imgProcesos" src="../source/img/pago.png" alt="pagos">
 
                     <div class="ProcesoText">
-                        <h1>Imputación de pagos</h1>
-                        <p> Se registran los pagos (efectivo, cheque, etc.) y se da seguimiento hasta cancelar el total.</p>
+                        <h1 data-lang="payment_registration_title">Imputación de pagos</h1>
+                        <p data-lang="payment_registration_desc">Se registran los pagos (efectivo, cheque, etc.) y se da seguimiento hasta cancelar el total.</p>
                     </div>
                 </div>
                 <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText3">
                     <img class="imgProcesos" src="../source/img/transaccion-economica.png" alt="tramites">
 
                     <div class="ProcesoText">
-                        <h1>Asignación de trámite</h1>
-                        <p>Se asigna el trámite a gestoría.</p>
+                        <h1 data-lang="procedure_assignment_title">Asignación de trámite</h1>
+                        <p data-lang="procedure_assignment_desc">Se asigna el trámite a gestoría.</p>
                     </div>
                 </div>
                 <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText4">
                     <img class="imgProcesos" src="../source/img/documento.png" alt="carpetas">
 
                     <div class="ProcesoText">
-                        <h1>Entrega de carpeta</h1>
-                        <p>Gestoría retira el tramite y se hace la entrega del vehículo y carpeta al cliente.</p>
+                        <h1 data-lang="folder_delivery_title">Entrega de carpeta</h1>
+                        <p data-lang="folder_delivery_desc">Gestoría retira el tramite y se hace la entrega del vehículo y carpeta al cliente.</p>
                     </div>
                 </div>
                 <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText5">
                     <img class="imgProcesos" src="../source/img/gestion-web.png" alt="gestion y servidor">
 
                     <div class="ProcesoText">
-                        <h1>Gestion de Prendas</h1>
-                        <p>Si el cliente solicita crédito prendario, se cargan todos los datos que serán enviados a las entidades financieras.</p>
+                        <h1 data-lang="pledge_management_title">Gestion de Prendas</h1>
+                        <p data-lang="pledge_management_desc">Si el cliente solicita crédito prendario, se cargan todos los datos que serán enviados a las entidades financieras.</p>
                     </div>
                 </div>
                 <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText6">
                     <img class="imgProcesos" src="../source/img/verificado.png" alt="aprobacion documento">
 
                     <div class="ProcesoText">
-                        <h1>Aprobación</h1>
-                        <p>La gerencia se asegura que todo en la transacción esté correcto para su aprobación.</p>
+                        <h1 data-lang="approval_title">Aprobación</h1>
+                        <p data-lang="approval_desc">La gerencia se asegura que todo en la transacción esté correcto para su aprobación.</p>
                     </div>
                 </div>
                 <div class="ProcesosText animate__animated animate__zoomIn" id="ProcesosText7">
                     <img class="imgProcesos" src="../source/img/gestion-de-proyectos.png" alt="gestion tramites">
 
                     <div class="ProcesoText">
-                        <h1>Gestión de trámite</h1>
-                        <p> Se ingresa el tramite al registro y se da seguimiento.</p>
+                        <h1 data-lang="procedure_management_title">Gestión de trámite</h1>
+                        <p data-lang="procedure_management_desc">Se ingresa el tramite al registro y se da seguimiento.</p>
                     </div>
                 </div>
             </div>
@@ -277,30 +278,22 @@
         <section class="sectionBeneficios">
             <div class="espacioParaHref" id="tituloBeneficios"></div>
             <div class="contTituloSection">
-                <h2 class="tituloSection">Beneficios</h2>
+                <h2 class="tituloSection" data-lang="benefits">Beneficios</h2>
             </div>
             <div class="contBeneficios">
                 <ul class="listaBeneficios" data-aos="fade-up" data-aos-delay="300">
-                    <li>✔ Visibilidad y toma de decisiones</li>
-                    <li>✔ Digitalización y centralización de datos</li>
-                    <li>✔ Gestión: inventario, ventas, prendas, clientes, proveedores, trámites y gastos</li>
-                    <li>✔ Control y automatización de movimientos y caja</li>
-                    <li>✔ Control de flujo de efectivo, cheques y pagares</li>
-                    <li>✔ Mejor experiencia para el cliente</li>
+                    <li data-lang="benefit_1">✔ Visibilidad y toma de decisiones</li>
+                    <li data-lang="benefit_2">✔ Digitalización y centralización de datos</li>
+                    <li data-lang="benefit_3">✔ Gestión: inventario, ventas, prendas, clientes, proveedores, trámites y gastos</li>
+                    <li data-lang="benefit_4">✔ Control y automatización de movimientos y caja</li>
+                    <li data-lang="benefit_5">✔ Control de flujo de efectivo, cheques y pagarés</li>
+                    <li data-lang="benefit_6">✔ Mejor experiencia para el cliente</li>
                 </ul>
                 <div class="imgsBeneficios">
                     <img src="../source/img/imagenBeneficios.png" alt="ejemplos app lutente">
                 </div>
             </div>
         </section>
-
-        <!-- <section class="sectionVideos">
-            <h2>¿Que es LUTENTE?</h2>
-            <iframe id="iframe" src="https://www.youtube.com/embed/zGAVNckbv28?si=x7zuma3OJ0wgM-RW"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                allowfullscreen></iframe>
-        </section> -->
 
     </main>
 
@@ -312,7 +305,7 @@
             </div>
             <div class="seccion_2">
                 <div class="footer_contacto">
-                    <a id="contacto_footer_boton" href="formulario.html">Contáctenos <img src="../source/img/chevron-right-regular-24.png" alt=""></a>
+                    <a id="contacto_footer_boton" href="formulario.html" data-lang="contact_us">Contáctenos <img src="../source/img/chevron-right-regular-24.png" alt=""></a>
                     <div>
                         <a href="https://www.instagram.com/lutente.cloud/"><img src="../source/img/instagram.png" alt=""></a>
                         <a href="#"><img src="../source/img/linkedin.png" alt=""></a>
@@ -322,19 +315,21 @@
                 
                 <div class="footer_navegabilidad"> 
                     <ul>
-                    <li><a href="erp_web.html">ERP PYMEs</a></li>
-                    <li><a href="consecionaria_web.html">ERP Vehículos</a></li>
-                     <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-                     <li><a href="formulario.html">Contacto</a></li>
+                    <li><a href="erp_web.html" data-lang="erp_pymes">ERP PYMEs</a></li>
+                    <li><a href="consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a></li>
+                     <li><a href="sobre_nosotros.html" data-lang="about_us">Sobre nosotros</a></li>
+                     <li><a href="formulario.html" data-lang="contact">Contacto</a></li>
                     </ul>
                 </div>
             </div>
-            <p>®Lutente 2023</p>
+            <p data-lang="copyright">®Lutente 2023</p>
         </div>
-    </footer>
+    </footer>  
 
     <!-- Link AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="../js/lenguajes.js"></script>
+    <script src="../js/toggle_lang.js"></script>
 
     <script>
         AOS.init();

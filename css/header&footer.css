@@ -104,6 +104,7 @@ nav {
     align-items: center;
     width: 16%;
     min-width: 205px;
+    justify-content: space-around;
 }
 
 .ingreso a {
@@ -119,11 +120,14 @@ button {
     margin-left: 30px;
 }
 
-#lenguaje {
-    filter: invert(1);
+#lenguaje{
+    filter: invert(0);
+    width: 40px;
 }
 
-
+#toggle_lenguaje{
+    margin-left: 0;
+}
 
 /* =========================================*/
 
@@ -248,7 +252,7 @@ button {
         height: 40px;
         width: 40px;
         margin-right: 10px;
-        filter: invert(1);
+        
     }
 
     .menu_toggle_header #close_img{
@@ -288,6 +292,30 @@ button {
 
 
 }
+
+@media (max-width: 500px) {
+    .nav_links_burguer a{
+        font-size: 0.9em;
+    }
+    .nav_links_burguer{
+        align-items: center;
+    }
+
+    .menu_toggle_header{
+        height: 50px;
+    }
+
+    .menu_toggle_header #close_img{
+        height: 25px;
+        width: 25px;
+    }
+
+    .menu_toggle_header #lenguaje_burguer{
+        height: 35px;
+        width: 35px;
+    }
+}
+
 
 /* --------- Footer -------- */
 
@@ -422,3 +450,31 @@ footer .wrapper p{
 
 /* MEDIAQUERYS */
 
+@media (max-width: 600px) {
+    .seccion_1 a{
+        width: 30px;
+        height: 30px;
+    }
+
+    .seccion_1 img{
+       
+        height: 100px;
+    }
+    .seccion_1 a img{
+        width: 30px;
+        height: 30px;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .seccion_1 img{
+        height: 70px;
+    }
+
+    .seccion_2{
+        font-size: 0.8em;
+    }
+    
+}

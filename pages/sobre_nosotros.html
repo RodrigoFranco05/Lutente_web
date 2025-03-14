@@ -33,22 +33,22 @@
                     <img id="logo" src="../source/img/Home_2.png" alt="Lutente">
                 </div>
                 <ul class="nav_links">
-                     <li class="first_link"><a class="nav_link_a" href="../index.html">Home</a></li>
+                     <li class="first_link"><a class="nav_link_a" href="../index.html" data-lang="home">Home</a></li>
                      <li><div class="dropdown">
-                        <button class="dropbtn">Productos</button>
+                        <button class="dropbtn" data-lang="products">Productos</button>
                         <div class="dropdown-content">
-                          <a href="erp_web.html">ERP PyMEs</a>
-                          <a href="consecionaria_web.html">ERP Vehículos</a>
+                          <a href="erp_web.html" data-lang="erp_pymes">ERP PyMEs</a>
+                          <a href="consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a>
                         </div>
                       </div></li>
-                     <li><a class="nav_link_a" href="#">Nosotros</a></li>
-                     <li><a class="nav_link_a" href="formulario.html">Contacto</a></li>
+                     <li><a class="nav_link_a" href="#" data-lang="about_us">Nosotros</a></li>
+                     <li><a class="nav_link_a" href="formulario.html" data-lang="contact">Contacto</a></li>
                 </ul>
 
                 <div class="ingreso">
                     <ul class="ingreso_nav">
-                        <il class="primero"><a href="formulario.html">Registro</a></il>
-                        <il><a href="https://lutente.com/DEMO/login.php">Ingreso</a></il>
+                        <il class="primero"><a href="formulario.html" data-lang="register">Registro</a></il>
+                        <il><a href="https://lutente.com/DEMO/login.php" data-lang="login">Ingreso</a></il>
                     </ul>
     
                     <button id="toggle_lenguaje"><img id="lenguaje" src="../source/img/globe-regular-24.png" alt="cambio idioma"></button>
@@ -66,13 +66,13 @@
                 </div>
     
                 <ul class="nav_links_burguer">
-                    <li><a class="nav_link_a" href="../index.html">Home</a></li>
-                        <li class="productos_burguer"><a href="erp_web.html">ERP PyMEs</a></li>
-                        <li class="productos_burguer"><a href="consecionaria_web.html">ERP Vehículos</a></li>
-                    <li><a class="nav_link_a" href="sobre_nosotros.html">Nosotros</a></li>
-                    <li><a class="nav_link_a" href="formulario.html">Contacto</a></li>
-                    <li class="registro_burguer"><a href="formulario.html">Registro</a></li>
-                    <li><a href="https://lutente.com/DEMO/login.php">Ingreso</a></li>
+                    <li><a class="nav_link_a" href="../index.html" data-lang="home">Home</a></li>
+                        <li class="productos_burguer"><a href="erp_web.html" data-lang="erp_pymes">ERP PyMEs</a></li>
+                        <li class="productos_burguer"><a href="consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a></li>
+                    <li><a class="nav_link_a" href="sobre_nosotros.html" data-lang="about_us">Nosotros</a></li>
+                    <li><a class="nav_link_a" href="formulario.html" data-lang="contact">Contacto</a></li>
+                    <li class="registro_burguer"><a href="formulario.html" data-lang="register">Registro</a></li>
+                    <li><a href="https://lutente.com/DEMO/login.php" data-lang="login">Ingreso</a></li>
                </ul>
         
             </div>
@@ -81,9 +81,11 @@
     <main>
         <section class="hero_section">
             <div class="texto_hero" data-aos="fade-up" data-aos-duration="2000">
-            <h2>¿QUIENES SOMOS?</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus maiores labore repellat reprehenderit ipsum non ab architecto eos 
-                magnam vel, quibusdam, facere adipisci odio aliquid modi corrupti? Molestias, aut voluptatum.</p>
+            <h2 data-lang="about_us_title">¿QUIENES SOMOS?</h2>
+            <p data-lang="about_us_desc_1">En Lutente Cloud, ayudamos a empresas y emprendedores a gestionar su negocio de manera eficiente con una plataforma en la nube fácil de usar, segura y accesible.</p>
+            <p data-lang="about_us_desc_2">Desde 2013, hemos trabajado con diversas industrias, optimizando su cadena de suministro y mejorando su control operativo. Nuestro fundador, con más de 25 años de experiencia, ha asesorado a empresas en todo el mundo. Su formación en Ingeniería Electrónica en la Universidad Internacional de Florida (FIU), sumada a su Maestría en Administración de Empresas (MBA) en la Universidad de Duke, le ha permitido combinar conocimiento técnico con visión estratégica para crear una solución que realmente impacte en la productividad y rentabilidad de nuestros clientes.</p>
+            <p data-lang="about_us_desc_3">Con Lutente Cloud, puedes  controlar ventas, stock, facturación y más, desde cualquier lugar. Ya sea con una compra única o una suscripción mensual, nuestra plataforma está diseñada para hacer más simple la gestión de tu empresa.</p>
+            <p data-lang="about_us_desc_4">Si querés dejar atrás los métodos tradicionales y llevar tu negocio al siguiente nivel, Lutente Cloud es la herramienta que estabas buscando.</p>
             </div>
             <div class="img_hero" >
                 <img src="../source/img/hombre_empresa_nosotros.png" alt="">
@@ -91,27 +93,28 @@
         </section>
         
         <section class="seccion_1_hero">
-            <h1>Elige llevar tu negocio al siguiente nivel.</h1>
+            <h1 data-lang="choose_next_level">Elige llevar tu negocio al siguiente nivel.</h1>
 
             <section class="idea_2"  >
 
                 <div class="idea_2_1">
                      <div data-aos="fade-right" data-aos-duration="2000">
-                        <h2 >Nuestra Visión</h2>
-                        <p >
+                        <h2 data-lang="our_vision">Nuestra Visión</h2>
+                        <p data-lang="vision_text">
                             Es convertirnos en el aliado tecnológico preferido de las pequeñas y medianas empresas, proporcionando herramientas innovadoras que impulsen su crecimiento y eficiencia operativa.
                             Deseamos que cada empresa pueda alcanzar su máximo potencial, simplificando procesos y tomando decisiones estratégicas utilizando tecnología de vanguardia con inteligencia artificial.
                             Juntos, hacemos posible lo extraordinario
                         </p>
                      </div> 
-                     <span data-aos="fade-left" data-aos-duration="2000"></span>
+                     <span data-aos="fade-left" data-aos-duration="2000"><img src="../source/img/Texto del párrafo (8).png" alt=""></span>
+                     
                 </div>
 
                 <div class="idea_2_2">
-                    <span data-aos="fade-right" data-aos-duration="2000"></span>
+                    <span data-aos="fade-right" data-aos-duration="2000"><img src="../source/img/Designer_1.png" alt=""></span>
                     <div data-aos="fade-left" data-aos-duration="2000">
-                        <h2>Nuestra Mision</h2>
-                        <p >
+                        <h2 data-lang="our_mission">Nuestra Misión</h2>
+                        <p data-lang="mission_text">
                         Es transformar la gestión de las PYMEs a través de soluciones tecnológicas accesibles, fáciles de usar y altamente personalizables.
                         Automatizamos procesos, optimizamos recursos y te ayudamos a mantener el control total de tu empresa.
                         Empoderamos a emprendedores y empresarios, simplificando su día a día para que se concentren en lo que realmente importa: ¡hacer crecer su negocio!.
@@ -128,33 +131,33 @@
 
             <div class="seccion_3_conteiner">
                 
-                <H3  data-aos="fade-up" data-aos-duration="2000" >MARCAMOS LA DIFERENCIA</H3>
+                <H3 data-aos="fade-up" data-aos-duration="2000" data-lang="make_difference">MARCAMOS LA DIFERENCIA</H3>
 
                  <div class="grid_container">
 
-                    <div  data-aos="fade-up" data-aos-duration="2000" >
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <img src="../source/img/bx-star.png" alt="">
-                        <p>Te escuchamos, entendemos y acompañamos</p>
-                    </div  data-aos="fade-up" data-aos-duration="2000" >
-                    <div  data-aos="fade-up" data-aos-duration="2000" >
+                        <p data-lang="diff_1">Te escuchamos, entendemos y acompañamos</p>
+                    </div>
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <img src="../source/img/bx-search.png" alt="">
-                        <p>Nos enfocamos en tus necesidades</p>
+                        <p data-lang="diff_2">Nos enfocamos en tus necesidades</p>
                     </div>
-                    <div  data-aos="fade-up" data-aos-duration="2000" >
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <img src="../source/img/bx-cog.png" alt="">
-                        <p>Simplicidad y Eficiencia</p>
+                        <p data-lang="diff_3">Simplicidad y Eficiencia</p>
                     </div>
-                    <div  data-aos="fade-up" data-aos-duration="2000" >
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <img src="../source/img/bx-group.png" alt="">
-                        <p>Un equipo comprometido</p>
+                        <p data-lang="diff_4">Un equipo comprometido</p>
                     </div>
-                    <div  data-aos="fade-up" data-aos-duration="2000" >
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <img src="../source/img/bx-line-chart.png" alt="">
-                        <p>Porque TU éxito es NUESTRO éxito</p>
+                        <p data-lang="diff_5">Porque TU éxito es NUESTRO éxito</p>
                     </div>
-                    <div  data-aos="fade-up" data-aos-duration="2000" >
+                    <div data-aos="fade-up" data-aos-duration="2000">
                         <img src="../source/img/bx-cloud.png" alt="">
-                        <p> Conexión real, soluciones reales</p>
+                        <p data-lang="diff_6">Conexión real, soluciones reales</p>
                     </div>
 
                  </div>     
@@ -172,7 +175,7 @@
             </div>
             <div class="seccion_2">
                 <div class="footer_contacto">
-                    <a id="contacto_footer_boton" href="formulario.html">Contáctenos <img src="../source/img/chevron-right-regular-24.png" alt=""></a>
+                    <a id="contacto_footer_boton" href="formulario.html" data-lang="contact_us">Contáctenos <img src="../source/img/chevron-right-regular-24.png" alt=""></a>
                     <div>
                         <a href="https://www.instagram.com/lutente.cloud/"><img src="../source/img/instagram.png" alt=""></a>
                         <a href="#"><img src="../source/img/linkedin.png" alt=""></a>
@@ -182,19 +185,21 @@
                 
                 <div class="footer_navegabilidad"> 
                     <ul>
-                    <li><a href="erp_web.html">ERP PYMEs</a></li>
-                    <li><a href="consecionaria_web.html">ERP Vehículos</a></li>
-                     <li><a href="sobre_nosotros.html">Sobre nosotros</a></li>
-                     <li><a href="formulario.html">Contacto</a></li>
+                    <li><a href="erp_web.html" data-lang="erp_pymes">ERP PYMEs</a></li>
+                    <li><a href="consecionaria_web.html" data-lang="erp_vehicles">ERP Vehículos</a></li>
+                     <li><a href="sobre_nosotros.html" data-lang="about_us">Sobre nosotros</a></li>
+                     <li><a href="formulario.html" data-lang="contact">Contacto</a></li>
                     </ul>
                 </div>
             </div>
-            <p>®Lutente 2023</p>
+            <p data-lang="copyright">®Lutente 2023</p>
         </div>
     </footer>
 
     <script src="../js/sobre_nosotros.js"></script>
     <script src="../js/header_main.js"></script>
+    <script src="../js/lenguajes.js"></script>
+    <script src="../js/toggle_lang.js"></script>
 
     
      <!-- AOS -->
