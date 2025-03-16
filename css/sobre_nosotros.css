@@ -20,6 +20,7 @@ body{
 .hero_section{
     margin-top: 77px;
     width: 100%;
+    min-height: fit-content;
     height: 100vh;
     background-image: url("../source/img/bkg.png");
     background-position: center;
@@ -133,7 +134,8 @@ body{
     gap: 30px;
     width: 80%;
     max-width: 141vh;
-    justify-items: center
+    justify-items: center;
+    margin-bottom: 50px;
     
 }
 
@@ -261,7 +263,11 @@ body{
     align-items: center;
     justify-content: center;
     height: 50%;
+    
+   
     margin-top: 50px;
+    
+    
 }
 
 .idea_2_2 div{
@@ -275,6 +281,7 @@ body{
     background-color: #f4b10e;
     align-items: center;
     justify-content: center;
+    
 
     box-shadow: 0px 0px 30px 5px rgba(0,0,0,0.75);
 }
@@ -456,10 +463,16 @@ body{
 
 @media (max-width: 690px) {
 
+    .idea_2_2, .idea_2_1{
+
+        overflow: hidden;
+        padding: 40px 20px;
+    }
     .idea_2_1 div, .idea_2_2 div{
         width: 90%;
         height: auto;
         padding: 30px;
+        
     }
 
     .idea_2 span {
