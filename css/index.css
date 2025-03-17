@@ -24,8 +24,13 @@
 
     background-image: url(../source/img/bkg.png);
     background-position: center;
+    background-size: cover;
     border-radius: 0 0 50px 50px;
     box-shadow: 0px 5px 70px 15px rgba(0,0,0,1);
+
+    min-height: fit-content;
+    min-width: fit-content;
+    
     
 }
 
@@ -46,13 +51,15 @@
     justify-content: center;
     align-items: center;
     margin: 8% 3%;
-
+    min-height: fit-content;
 }
 
 .hero_producto_1 , .consecionaria{
     
     display: flex;
     align-items: center;
+    min-height: fit-content;
+
 }
 
 .hero_producto_1_texto{
@@ -95,6 +102,7 @@
 .hero_producto_1 h1{
     font-size: 4em;
     font-weight: 400;
+    text-align: center;
 }
 
 .hero_producto_1 p {
@@ -120,6 +128,9 @@
     transition: 0.7s;
 }
 
+.hero_producto_1 #botonERP{
+    margin-bottom: 30px;
+}
 
 #botonERP{
     transition: 0.5s;
@@ -163,8 +174,6 @@
 }
 
 .mas_productos{
-    /* background-image: url(../source/img/Texto_modulo.png);
-    color: white; */
     background-color: #f4b10e;
     color: black;
 
@@ -217,6 +226,10 @@
     width: 100%;
 }
 
+.consecionaria_img_responsive{
+    display: none;
+}
+
 
 .seccion_1_lp{
     padding: 5%;
@@ -253,44 +266,6 @@
     text-align: center;
     margin: 30px 0 50px 0
 }
-
-/*
-.seccion_1_lp{
-    padding: 5%;
-}
-
-.seccion_1_lp div{
-   
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-}
-
-.seccion_1_lp div img{
-    width: 80%;
-
-    position: absolute;
-    z-index: -1;
-
-    
-    
-}
-
-.seccion_1_lp div h3{
-    width: 50%;
-    text-align: center;
-    margin-bottom: 20%;
-    margin-top: 20%;
-    padding: 30px;
-    
-    background-color: rgb(244, 177, 14,0.7);
-
-    font-weight: 300;
-    font-size: 3.5em;
-}
-
-*/
 
 .seccion_2_lp{
     width: 100%;
@@ -397,6 +372,7 @@ input[type="radio"]{
     font-weight: 400;
     margin: 20px 0 0;
     padding: 20px;
+    text-align: center;
 }
 
 .seccion_2_lp img{
@@ -423,6 +399,13 @@ input[type="radio"]{
     align-items: center;
 }
 
+.titulo_seccion_3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
 .seccion_3_lp div h3{
     font-size:4em;
     font-weight: 300;
@@ -431,10 +414,11 @@ input[type="radio"]{
     align-content: center;
     flex-direction: row;
     align-items: flex-end;
+    text-align: center;
 }
 
 .seccion_3_lp div strong{
-    font-size: 3em;
+    font-size: 6em;
     font-weight: 500;
     margin-right: 20px;
     color: #f4b10e;
@@ -449,6 +433,7 @@ input[type="radio"]{
     grid-template-columns:  repeat(4, 400px);
     grid-template-rows: repeat(1, 400px);
     justify-content: center;
+    justify-items: center;
     gap: 50px;
     min-height: fit-content;
 
@@ -525,9 +510,6 @@ input[type="radio"]{
     background-color: #f4b10e;
     color: black;
     justify-content: flex-start !important;
-    /* box-shadow: inset 0px 0px 117px -31px rgba(0,0,0,0.75); */
-    /* box-shadow: inset 0px 0px 117px 45px rgba(0,0,0,0.75); */
-    /* box-shadow: inset 0px 0px 172px -60px rgba(0,0,0,0.75); */
     box-shadow: inset 0px 0px 141px -30px rgba(0,0,0,0.75);
   }
   
@@ -543,7 +525,7 @@ input[type="radio"]{
 }
 
 .flip-box-front img{
-    margin-top: 20%;
+    margin-top: 30%;
 }
 
 .flip-box-back p{
@@ -634,6 +616,10 @@ input[type="radio"]{
     color: white  ;
 }
 
+.consecionaria #botonERP {
+    margin-bottom: 20px;
+}
+
 
 /*===================== Media queryes ======================= */
 
@@ -656,3 +642,162 @@ input[type="radio"]{
     }
 }
 
+@media screen and (max-width: 600px){
+    .seccion_3_lp div h3 {
+        font-size: 3em;
+    }
+    .seccion_3_lp div strong{
+        font-size: 4em;
+        height: fit-content;
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 1250px){
+    .consecionaria h1{
+        font-size: 3em;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .consecionaria_texto p{
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 630px){
+    .consecionaria_img{
+        display: none;
+    }
+
+    .consecionaria_img_responsive{
+        display: flex;
+        align-items: center;
+        justify-content: center; 
+    }
+
+    .consecionaria_img_responsive img{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .grid_container div {
+        width: 300px;
+        height: 300px;
+    }
+    .flip-box-front p {
+        font-size: 1.2em;
+    }
+
+    .flip-box-back p {
+        font-size: 0.9em;
+    }
+
+    .grid_container{
+        align-items: end;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .seccion_1_lp div img{
+        width: 100%;
+    }
+    .seccion_1_lp div h3 {
+        font-size: 3em;
+    }
+    .seccion_1_lp div h4 {
+        font-size: 1.5em;
+    }
+
+    .seccion_2_lp h2{
+        font-size: 3em;
+    }
+}
+
+@media screen and (max-width: 370px){
+    .seccion_1_lp div h3 {
+        font-size: 2em;
+    }
+    .seccion_1_lp div h4 {
+        font-size: 1.2em;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .hero_producto_1{
+        flex-direction: column;
+    }
+
+    .hero_section{
+        margin-top: 77px;
+    }
+    .hero_img_logo_Lutente_Cloud{
+    display: none;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .seccion_2_lp{
+        background-size: 120%;
+        background-position: 50% 0px;
+    }
+}
+
+@media screen and (max-width: 1050px){
+    .seccion_2_lp{
+        background-size: 300%;
+
+    }
+    .seccion_2_lp img{
+        display: none;
+    }
+    .seccion_2_info{
+        width: 90%;
+        justify-content: center
+        
+    }
+}
+
+@media screen and (max-width: 800px){
+    .seccion_2_lp{
+        background-size: 400%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .hero_producto_1 h1{
+        font-size: 3em;
+    }
+    .hero_producto_1 p{
+        font-size: 3em;
+    }
+
+    .mas_productos h2{
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 380px){
+    .seccion_2_lp h2{
+        font-size: 2.5em;
+    }
+}
+
+@media screen and (max-width: 330px){
+    .hero_producto_1 h1{
+        font-size: 2.5em;
+    }
+    .hero_producto_1 p{
+        font-size: 2.5em;
+    }
+
+    #botonERP{
+        font-size: 1em;
+    }
+
+    .mas_productos h2{
+        font-size: 2em;
+    }
+}
