@@ -270,7 +270,7 @@ const languages = {
     procedure_management_title: "Procedure management",
     procedure_management_desc: "The procedure is entered into the registry and followed up.",
 
-    about_us_title: "Who are we",
+    about_us_title: "Who we are",
     about_us_desc_1: "At Lutente Cloud, we help businesses and entrepreneurs efficiently manage their business with an easy-to-use, secure, and accessible cloud platform.",
     about_us_desc_2: "Since 2013, we have worked with various industries, optimizing their supply chain and improving their operational control. Our founder, with over 25 years of experience, has advised companies worldwide. His education in Electronic Engineering at Florida International University (FIU), combined with his Master's in Business Administration (MBA) from Duke University, has allowed him to combine technical knowledge with strategic vision to create a solution that truly impacts our clients' productivity and profitability.",
     about_us_desc_3: "With Lutente Cloud, you can control sales, inventory, billing, and more from anywhere. Whether with a one-time purchase or a monthly subscription, our platform is designed to simplify the management of your company.",
