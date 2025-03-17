@@ -323,6 +323,7 @@ footer{
     margin: 20px auto;
     display: flex;
     justify-content: center;
+    
 }
 
 footer .wrapper{
@@ -331,6 +332,7 @@ footer .wrapper{
     display: flex;
     flex-direction: column;
     width: 95%;
+    height: fit-content;
     
 }
 
@@ -358,6 +360,7 @@ footer .wrapper{
 
 .seccion_1 a img{
    height: 50px;
+   width: 50px;
    filter: invert(0);
    transition: 0.5s;
 }
@@ -373,7 +376,7 @@ footer .wrapper{
 
 
 .seccion_2{
-    margin: 90px 0;
+    margin: 20px 0;
     display: flex;
     justify-content: space-around;
 }
@@ -381,6 +384,7 @@ footer .wrapper{
 .footer_contacto{
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 
 #contacto_footer_boton{
@@ -416,6 +420,11 @@ footer .wrapper{
 .footer_contacto a{
     color: rgb(14, 14, 14);
     margin: 10px;
+
+}
+
+.footer_contacto div a:first-child{
+    margin-left: 25px;
 }
 
 

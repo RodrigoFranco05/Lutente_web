@@ -493,6 +493,7 @@ body{
     
     .hero_section{
         justify-content: center;
+        height: 90vh;
     }
     
     .texto_hero{
