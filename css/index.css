@@ -20,7 +20,7 @@
 
 .hero_section{
     width: 100%;
-    height: 113vh;
+    height: 90vh;
 
     background-image: url(../source/img/bkg.png);
     background-position: center;
@@ -804,5 +804,24 @@ input[type="radio"]{
 
     .mas_productos h2{
         font-size: 2em;
+    }
+}
+
+@media (orientation: portrait){
+    .hero_section{
+        height: fit-content;
+    }
+}
+
+@media (max-aspect-ratio: 16/9){
+    .hero_section{
+        height: 90vh;
+    }
+}
+
+@media (max-aspect-ratio: 4/3){
+    .hero_section{
+        height: fit-content;
+        padding-bottom:50px ;
     }
 }

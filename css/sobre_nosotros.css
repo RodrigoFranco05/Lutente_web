@@ -477,4 +477,31 @@ body{
 }
 
 
+@media (orientation: portrait) {
+    .hero_section .texto_hero h2 {
+        font-size: 3em;
+    }
+    
+    .hero_section .texto_hero p {
+        font-size: 1.3em;
+        font-weight: 400;
+    }
+    
+    .img_hero img {
+        height: 0%;
+    }
+    
+    .hero_section{
+        justify-content: center;
+    }
+    
+    .texto_hero{
+        width: 90%;
+    }
+    
+    .hero_section .texto_hero p {
+        width: 100%;
+    }
+}
+
 
