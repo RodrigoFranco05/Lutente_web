@@ -732,6 +732,7 @@ input[type="radio"]{
 
     .hero_section{
         margin-top: 77px;
+        height: fit-content;
     }
     .hero_img_logo_Lutente_Cloud{
     display: none;
