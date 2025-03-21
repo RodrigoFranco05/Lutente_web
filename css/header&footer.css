@@ -456,6 +456,10 @@ footer .wrapper p{
     margin: 10px auto;
 }
 
+
+#linkedin{
+    display: none;
+}
 /* MEDIAQUERYS */
 
 @media (max-width: 600px) {

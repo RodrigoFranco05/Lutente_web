@@ -354,6 +354,11 @@
     width: 60%;
 }
 
+.contacto h2 strong{
+    color:#f4b10e;
+    font-weight: 500;
+}
+
 .consecionaria_promo{
     background-color: #f4b10e;
     width: 80%;
@@ -389,6 +394,8 @@
     text-align: center;
     
 }
+
+
 
 .consecionaria_promo div a{
     font-size: 1.5em;
