@@ -275,14 +275,17 @@
     background-position: center;
 
     height: 800px;
-    min-height: fit-content;
+    
     border-bottom: 20px solid #f4b10e;
     border-top: 20px solid #f4b10e;
 }
 
+
+
 .acordion{
     margin: 60px 10%;
     width: 600px;
+    height: ;
 }
 
 .acordion li{
@@ -737,6 +740,12 @@ input[type="radio"]{
     .hero_img_logo_Lutente_Cloud{
     display: none;
     }
+
+    .seccion_2_lp{
+        height: fit-content;
+        height: 900px;
+    }
+
 }
 
 @media screen and (max-width: 1200px){
@@ -787,6 +796,10 @@ input[type="radio"]{
 @media screen and (max-width: 380px){
     .seccion_2_lp h2{
         font-size: 2.5em;
+    }
+    .seccion_2_lp{
+        height: fit-content;
+        
     }
 }
 
