@@ -192,6 +192,7 @@
     height: 50vh;
     min-height: fit-content;
     display: flex;
+    flex-direction: row-reverse;
     justify-content: center;
     align-items:center ;
     
