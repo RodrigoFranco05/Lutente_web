@@ -46,7 +46,7 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .then(data => {
             // Mostrar mensaje de éxito en la misma página
-            showModal("¡Mensaje enviado con éxito! 🎉");
+            showModal("¡Mensaje enviado con éxito! 🎉 Revisa tu correo con la confirmacion.");
             form.reset(); // Limpiar formulario tras el envío
         })
         .catch(error => {
